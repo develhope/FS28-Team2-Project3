@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="it-IT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb | Case vacanze, baite, case sulla spiaggia e molto altro ancora</title>
+    <link rel="icon" href="Assets/airbnb_logo_icon_170605.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <div class="new-features-head">
+            <div class="feature-link">
+                <button type="button">Scopri di più sulla categoria icone</button> 
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="airbnb-logo-click">
+                <a href="index.html">
+                    <img src="Assets/airbnb_logo_icon_170605.png" alt="Airbnb - Home">
+                </a>
+            </div>
+            <div class="middle-links">
+                <button type="button">
+                    <p>Soggiorni</p>
+                </button>
+                <button type="button">
+                    <p>Esperienze</p>
+                </button>
+                <a href="#">Esperienze online</a>
+            </div>
+            <div class="side-menu">
+                <a href="#">Affitta con Airbnb</a>
+                <div class="lang-menu-btn">
+                    <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;">
+                            <path d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1
+                            .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37
+                            1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26
+                            6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83
+                            5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95
+                            12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="user-menu">
+                    <button type="button">
+                        <div class="hamburger">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="user-pic">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 100%; width: 100%; fill: currentcolor;">
+                                <path d="M16 .7C7.56.7.7 7.56.7 16S7.56 31.3 16 31.3 31.3 24.44 31.3 16 24.44.7 16
+                                .7zm0 28c-4.02 0-7.6-1.88-9.93-4.81a12.43 12.43 0 0 1 6.45-4.4A6.5 6.5 0 0 1 9.5
+                                14a6.5 6.5 0 0 1 13 0 6.51 6.51 0 0 1-3.02 5.5 12.42 12.42 0 0 1 6.45 4.4A12.67 12.67
+                                0 0 1 16 28.7z">
+                                </path>
+                            </svg>
+                        </div>
+                    </button>
+                    <div class="user-menu-open">
+                        <div>
+                            <a href="#"><strong>Registrati</strong></a>
+                            <a href="#">Accedi</a>
+                        </div>
+                        <div>
+                            <a href="#">Gift card</a>
+                            <a href="#">Affitta con Airbnb</a>
+                            <a href="#">Centro Assistenza</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-bar" id="search-bar">
+            <div class="place">
+                <label for="place-search">
+                    <div class="place-input">
+                        <div class="tag">Dove</div>
+                        <input type="search" id="place-search" name="query" placeholder="Cerca destinazioni" aria-autocomplete="none" value>
+                    </div>
+                </label>
+                <div class="place-panel">
+                    <div class="regions">
+                        <p>Cerca per regione</p>
+                        <div class="flexible">
+                            <button type="button">
+                                <img src="https://a0.muscache.com/pictures/f9ec8a23-ed44-420b-83e5-10ff1f071a13.jpg?im_w=320" alt="Qualsiasi posto random nel mondo">
+                                <p>Sono flessibile</p>
+                            </button>
+                        </div>
+                        <div class="south-america">
+                            <button type="button">
+                                <img src="https://a0.muscache.com/im/pictures/06a30699-aead-492e-ad08-33ec0b383399.jpg?im_w=320" alt="America del Sud">
+                                <p>America del Sud</p>
+                            </button>
+                        </div>
+                        <div class="spain">
+                            <button type="button">
+                                <img src="https://a0.muscache.com/im/pictures/a0fd6dfc-6bec-4abb-850e-9ab78ed7bf37.jpg?im_w=320" alt="Spagna">
+                                <p>Spagna</p>
+                            </button>
+                        </div>
+                        <div class="usa">
+                            <button type="button">
+                                <img src="https://a0.muscache.com/im/pictures/4e762891-75a3-4fe1-b73a-cd7e673ba915.jpg?im_w=320" alt="Stati Uniti">
+                                <p>Stati Uniti</p>
+                            </button>
+                        </div>
+                        <div class="uk">
+                            <button type="button">
+                                <img src="https://a0.muscache.com/im/pictures/dbb2b5ef-2efe-4099-81ac-c7b957f384ed.jpg?im_w=320" alt="Regno Unito">
+                                <p>Regno Unito</p>
+                            </button>
+                        </div>
+                        <div class="southeast-asia">
+                            <button type="button">
+                                <img src="https://a0.muscache.com/im/pictures/d77de9f5-5318-4571-88c7-e97d2355d20a.jpg?im_w=320" alt="Sud-est asiatico">
+                                <p>Sud-est asiatico</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dates">
+                <div>
+                    <div class="check-in">
+                        <div class="tag">Check-in</div>
+                        <p>Aggiungi date</p>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="calendar-navbar">
+                            <div class="calendar-buttons">
+                                <button type="button">Date</button>
+                                <button type="button">Mesi</button>
+                                <button type="button">Flessibile</button>
+                            </div>
+                        </div>
+                        <div class="calendar-week-days">
+                            <div class="week">
+                                <ul class="week-days">
+                                    <li class="day">Lun</li>
+                                    <li class="day">Mar</li>
+                                    <li class="day">Mer</li>
+                                    <li class="day">Gio</li>
+                                    <li class="day">Ven</li>
+                                    <li class="day">Sab</li>
+                                    <li class="day">Dom</li>
+                                </ul>
+                            </div>
+                            <div class="week">
+                                <ul class="week-days">
+                                    <li class="day">Lun</li>
+                                    <li class="day">Mar</li>
+                                    <li class="day">Mer</li>
+                                    <li class="day">Gio</li>
+                                    <li class="day">Ven</li>
+                                    <li class="day">Sab</li>
+                                    <li class="day">Dom</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="calendar">
+                            <div class="month">
+                                <h2 id="current-month"></h2>
+                            </div>
+                            <table class="calendar-tab">
+                                <tbody id="calendar-body-current">
+                                    <!-- Generato da javascript -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="calendar">
+                            <div class="month">
+                                <h2 id="next-month"></h2>
+                            </div>
+                            <table class="calendar-tab">
+                                <tbody id="calendar-body-next">
+                                    <!-- Generato da javascript -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="prev-month-button">
+                            <button type="button">
+                                <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;">
+                                    <path d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z" fill-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="next-month-button">
+                            <button type="button">
+                                <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;">
+                                    <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="calendar-foot">
+                            <label for="exact-days-1">
+                                <input type="radio" id="exact-days-1" name="days-preference-1" checked>
+                                Date esatte
+                            </label>
+                            <label for="more-less-one-day-1">
+                                <input type="radio" id="more-less-one-day-1" name="days-preference-1">
+                                ± 1 giorno
+                            </label>
+                            <label for="more-less-two-days-1">
+                                <input type="radio" id="more-less-two-days-1" name="days-preference-1">
+                                ± 2 giorni
+                            </label>
+                            <label for="more-less-three-days-1">
+                                <input type="radio" id="more-less-three-days-1" name="days-preference-1">
+                                ± 3 giorni
+                            </label>
+                            <label for="more-less-seven-days-1">
+                                <input type="radio" id="more-less-seven-days-1" name="days-preference-1">
+                                ± 7 giorni
+                            </label>
+                            <label for="more-less-fourteen-days-1">
+                                <input type="radio" id="more-less-fourteen-days-1" name="days-preference-1">
+                                ± 14 giorni
+                            </label>
+                        </div>
+                    </div>
+                    <div class="check-out">
+                        <div class="tag">Check-out</div>
+                        <p>Aggiungi date</p>
+                    </div>
+                    <div class="calendar-container">
+                        <div class="calendar-navbar">
+                            <div class="calendar-buttons">
+                                <button type="button">Date</button>
+                                <button type="button">Mesi</button>
+                                <button type="button">Flessibile</button>
+                            </div>
+                        </div>
+                        <div class="calendar-week-days">
+                            <div class="week">
+                                <ul class="week-days">
+                                    <li class="day">Lun</li>
+                                    <li class="day">Mar</li>
+                                    <li class="day">Mer</li>
+                                    <li class="day">Gio</li>
+                                    <li class="day">Ven</li>
+                                    <li class="day">Sab</li>
+                                    <li class="day">Dom</li>
+                                </ul>
+                            </div>
+                            <div class="week">
+                                <ul class="week-days">
+                                    <li class="day">Lun</li>
+                                    <li class="day">Mar</li>
+                                    <li class="day">Mer</li>
+                                    <li class="day">Gio</li>
+                                    <li class="day">Ven</li>
+                                    <li class="day">Sab</li>
+                                    <li class="day">Dom</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="calendar">
+                            <div class="month">
+                                <h2 id="current-month"></h2>
+                            </div>
+                            <table class="calendar-tab">
+                                <tbody id="calendar-body-current">
+                                    <!-- Generato da javascript -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="calendar">
+                            <div class="month">
+                                <h2 id="next-month"></h2>
+                            </div>
+                            <table class="calendar-tab">
+                                <tbody id="calendar-body-next">
+                                    <!-- Generato da javascript -->
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="move-back-button">
+                            <button type="button">
+                                <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;">
+                                    <path d="m13.7 16.29a1 1 0 1 1 -1.42 1.41l-8-8a1 1 0 0 1 0-1.41l8-8a1 1 0 1 1 1.42 1.41l-7.29 7.29z" fill-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="move-forward-button">
+                            <button type="button">
+                                <svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;">
+                                    <path d="m4.29 1.71a1 1 0 1 1 1.42-1.41l8 8a1 1 0 0 1 0 1.41l-8 8a1 1 0 1 1 -1.42-1.41l7.29-7.29z" fill-rule="evenodd">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="calendar-foot">
+                            <label for="exact-days-2">
+                                <input type="radio" id="exact-days-2" name="days-preference-2" checked>
+                                Date esatte
+                            </label>
+                            <label for="more-less-one-day-2">
+                                <input type="radio" id="more-less-one-day-2" name="days-preference-2">
+                                ± 1 giorno
+                            </label>
+                            <label for="more-less-two-days-2">
+                                <input type="radio" id="more-less-two-days-2" name="days-preference-2">
+                                ± 2 giorni
+                            </label>
+                            <label for="more-less-three-days-2">
+                                <input type="radio" id="more-less-three-days-2" name="days-preference-2">
+                                ± 3 giorni
+                            </label>
+                            <label for="more-less-seven-days-2">
+                                <input type="radio" id="more-less-seven-days-2" name="days-preference-2">
+                                ± 7 giorni
+                            </label>
+                            <label for="more-less-fourteen-days-2">
+                                <input type="radio" id="more-less-fourteen-days-2" name="days-preference-2">
+                                ± 14 giorni
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="guests-search">
+                <div class="guests">
+                    <div class="tag">Chi</div>
+                    <p>Aggiungi ospiti</p>
+                </div>
+                <div class="search-button">
+                    <button type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                            fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;">
+                            <path fill="none" d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"></path>
+                        </svg>
+                        <div>Cerca</div>
+                    </button>
+                </div>
+                <div class="guests-menu">
+                    <div class="guests-menu-container">
+                        <div>
+                            <div>
+                                <div class="adults">
+                                    <h1>Adulti</h1>
+                                    <p>Da 13 in su</p>
+                                </div>
+                                <div>
+                                    <button type="button">
+                                        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                                            height: 12px; width: 12px; fill: currentcolor;"><path d="m.75 6.75h10.5v-1.5h-10.5z"></path>
+                                        </svg>
+                                    </button>
+                                    <span id="adults-counter"></span>
+                                    <button type="button">
+                                        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                                            height: 12px; width: 12px; fill: currentcolor;"><path d="m6.75.75v4.5h4.5v1.5h-4.5v4.5h-1.5v-4.5h-4.5v-1.5h4.5v-4.5z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="kids">
+                                    <h1>Bambini</h1>
+                                    <p>Da 2 anni a 12 anni</p>
+                                </div>
+                                <div>
+                                    <button type="button">
+                                        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                                            height: 12px; width: 12px; fill: currentcolor;"><path d="m.75 6.75h10.5v-1.5h-10.5z"></path>
+                                        </svg>
+                                    </button>
+                                    <span id="adults-counter"></span>
+                                    <button type="button">
+                                        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                                            height: 12px; width: 12px; fill: currentcolor;"><path d="m6.75.75v4.5h4.5v1.5h-4.5v4.5h-1.5v-4.5h-4.5v-1.5h4.5v-4.5z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="toddlers">
+                                    <h1>Neonati</h1>
+                                    <p>Fino a 2 anni</p>
+                                </div>
+                                <div>
+                                    <button type="button">
+                                        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                                            height: 12px; width: 12px; fill: currentcolor;"><path d="m.75 6.75h10.5v-1.5h-10.5z"></path>
+                                        </svg>
+                                    </button>
+                                    <span id="adults-counter"></span>
+                                    <button type="button">
+                                        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                                            height: 12px; width: 12px; fill: currentcolor;"><path d="m6.75.75v4.5h4.5v1.5h-4.5v4.5h-1.5v-4.5h-4.5v-1.5h4.5v-4.5z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div class="pets">
+                                    <h1>Animali domestici</h1>
+                                    <button type="button">
+                                        <p>Viaggi con un animale di servizio?</p>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button type="button">
+                                        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                                            height: 12px; width: 12px; fill: currentcolor;"><path d="m.75 6.75h10.5v-1.5h-10.5z"></path>
+                                        </svg>
+                                    </button>
+                                    <span id="adults-counter"></span>
+                                    <button type="button">
+                                        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="presentation" focusable="false" style="display: block;
+                                            height: 12px; width: 12px; fill: currentcolor;"><path d="m6.75.75v4.5h4.5v1.5h-4.5v4.5h-1.5v-4.5h-4.5v-1.5h4.5v-4.5z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+</body>
+</html>
