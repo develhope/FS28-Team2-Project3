@@ -1,3 +1,26 @@
+/* Rimuovo i margini del DOC per riempire la pagina */
+
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.new-features-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #e7e7e2;
+  max-width: 100%;
+  height: 64px;
+}
+
+#icon-button {
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 #small-logo {
   display: none;
   height: 30px;
@@ -6,6 +29,8 @@
 #full-logo {
   height: 55px;
 }
+
+/* Utilizzo del media query per la responsività del logo (switch da logo con titolo a solo logo) */
 
 @media (max-width: 1125px) {
   #full-logo {
@@ -17,8 +42,13 @@
 }
 
 .navbar {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 0px 8px rgb(175, 175, 175);
   display: inline-flex;
   width: 100%;
+  justify-content: space-between;
+  
 }
 
 .middle-links > button {
@@ -32,4 +62,60 @@
   border: none;
   background-color: #f2f2f2;
   
+}
+
+.search-bar {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+
+/* funzionalità menu hamburger (da verificare lo stile successivamente) */
+
+.user-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+.user-menu-open {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  width: 200px;
+}
+
+.user-menu-open a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+}
+
+.user-menu-open a:hover {
+  background-color: #f1f1f1;
+}
+
+.show {
+  display: block;
 }
