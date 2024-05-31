@@ -1,0 +1,35 @@
+#small-logo {
+  display: none;
+  height: 30px;
+}
+
+#full-logo {
+  height: 55px;
+}
+
+@media (max-width: 1125px) {
+  #full-logo {
+    display: none;
+  }
+  #small-logo {
+    display: inline;
+  }
+}
+
+.navbar {
+  display: inline-flex;
+  width: 100%;
+}
+
+.middle-links > button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.middle-links > button:hover {
+  border-radius: 30px;
+  border: none;
+  background-color: #f2f2f2;
+  
+}
