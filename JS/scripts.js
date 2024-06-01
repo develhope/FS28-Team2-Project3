@@ -1,3 +1,4 @@
+// Script per apertura menu "Accedi"
 document.addEventListener('DOMContentLoaded', (event) => {
   const menuButton = document.querySelector('.menu-button');
   const userMenu = document.querySelector('.user-menu-open');
@@ -9,6 +10,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
   window.addEventListener('click', (event) => {
     if (!menuButton.contains(event.target) && !userMenu.contains(event.target)) {
       userMenu.classList.remove('show');
+    }
+  });
+});
+
+// Script per apertura menu "Dove"
+document.addEventListener('DOMContentLoaded', () => {
+  const placeInput = document.getElementById('place-search');
+  const placePanel = document.querySelector('.place-panel');
+
+  placeInput.addEventListener('click', () => {
+    placePanel.classList.toggle('hidden');
+  });
+
+  // Optional: Close the panel when clicking outside
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.place')) {
+      placePanel.classList.add('hidden');
     }
   });
 });
