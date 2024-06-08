@@ -529,6 +529,45 @@ p {
 
 .stay-choices-elements {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   font-size: smaller;
+  height: 78px;
+  align-items: center;
+  overflow-x: auto;
+  width: 100vw;
+  white-space: nowrap;
+  padding: 0px 40px;
+}
+
+.stay-choices-elements::-webkit-scrollbar {
+  display: none;
+}
+
+input[type="radio" i] {
+  display: none;
+}
+
+.place-choice {
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.buttons {
+  position: relative; /* Imposta la posizione assoluta per i bottoni */
+  top: 0;
+  left: 0;
+  width: 100px; /* Larghezza del div dei bottoni */
+}
+
+.left-button {
+  position: relative; /* Posiziona il bottone a sinistra */
+  left: 0;
+  top: 0;
+}
+
+.right-button {
+  position: relative; /* Posiziona il bottone a destra */
+  right: 0;
+  top: 0;
 }
