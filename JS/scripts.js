@@ -1,5 +1,5 @@
-// Script per apertura menu "Accedi"
-document.addEventListener('DOMContentLoaded', (event) => {
+// Open panel menu "Accedi"
+document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.querySelector('.menu-button');
   const userMenu = document.querySelector('.user-menu-open');
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
-// Script per apertura menu "Dove"
+// Open panel menu "Dove"
 document.addEventListener('DOMContentLoaded', () => {
   const placeInput = document.getElementById('place-search');
   const placePanel = document.querySelector('.place-panel');

@@ -1,10 +1,13 @@
+:root {
+  --air-gray: #6a6a6a
+}
+
 /* Rimuovo i margini del DOC per riempire la pagina */
 
 html, body{
   margin: 0;
   padding: 0;
   font-family: 'Cereal', sans-serif;
-  background-color: #e7e7e2;
 }
 
 /* Font originale AirBnb */
@@ -19,22 +22,6 @@ html, body{
   src: url('assets/font/AirbnbCereal_W_Lt.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
-}
-
-.new-features-head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #e7e7e2;
-  max-width: 100%;
-  height: 64px;
-}
-
-#icon-button {
-  border: none;
-  background-color: transparent;
-  text-decoration: underline;
-  font-size: 0.9rem;
 }
 
 #small-logo {
@@ -57,10 +44,13 @@ html, body{
   }
 }
 
+header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+
+}
+
 .navbar {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  box-shadow: 0px 0px 4px rgb(175, 175, 175);
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
@@ -92,6 +82,8 @@ html, body{
 .user-menu {
   position: relative;
   display: inline-block;
+  border: 1px solid #333;
+  border-radius: 50px;
 }
 
 .menu-button {
@@ -102,6 +94,11 @@ html, body{
   align-items: center;
   padding: 10px;
 }
+
+.hamburger {
+  margin-right: 20px;
+}
+
 
 .hamburger div {
   width: 25px;
@@ -147,7 +144,7 @@ html, body{
 
 .place-input {
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 
 .place-panel.hidden {
@@ -186,6 +183,7 @@ html, body{
   border: none;
   cursor: pointer;
   text-align: center;
+  padding-top: 10px;
 }
 
 .grid-item img {
@@ -203,4 +201,334 @@ html, body{
 .grid-item :hover {
   background-color: #f1f1f1;
   border-radius: 10px;
+}
+
+.user-pic {
+  width: 40px;
+}
+
+
+/*  */
+
+/* Stili per la search bar */
+/* Generali */
+.search-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 66px;
+}
+
+.place,
+.dates,
+.guests-search {
+  flex: 1;
+  display: flex;
+  /* flex-direction: column; */
+  /* position: relative; */
+}
+
+.place label,
+.check-in,
+.check-out,
+.guests {
+  display: flex;
+  flex-direction: column;
+}
+
+.place-input,
+.check-in,
+.check-out,
+.guests {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.place-input:hover,
+.check-in:hover,
+.check-out:hover,
+.guests:hover {
+  background-color: #f7f7f7;
+}
+
+input[type="search"] {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+.tag {
+  font-size: 12px;
+  font-weight: normal;
+  color: #222;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #222;
+}
+
+.place-panel,
+.calendar-container,
+.guests-menu {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Grid per le immagini */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-item img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Calendario */
+.calendar-navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.calendar-buttons button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #717171;
+  cursor: pointer;
+}
+
+.calendar-buttons button:hover {
+  text-decoration: underline;
+}
+
+.calendar-week-days,
+.calendar {
+  padding: 10px;
+}
+
+.week-days {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.week-days .day {
+  font-size: 12px;
+  color: #717171;
+}
+
+.calendar-tab {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-tab td,
+.calendar-tab th {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 5px;
+}
+
+.calendar-foot {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.calendar-foot label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.calendar-foot input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Bottoni di navigazione del calendario */
+.prev-month-button,
+.next-month-button,
+.move-back-button,
+.move-forward-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-month-button {
+  left: 10px;
+}
+
+.next-month-button {
+  right: 10px;
+}
+
+.move-back-button {
+  left: 10px;
+}
+
+.move-forward-button {
+  right: 10px;
+}
+
+/* Pulsante di ricerca */
+.search-button button {
+  display: flex;
+  align-items: center;
+  background-color: #ff385c;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.search-button button:hover {
+  background-color: #e03352;
+}
+
+.search-button svg {
+  margin-right: 5px;
+}
+
+/* Menu ospiti */
+.guests-menu-container {
+  padding: 10px;
+}
+
+.guests-menu-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.guests-menu-container h1 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.guests-menu-container p {
+  font-size: 12px;
+  color: #717171;
+}
+
+.guests-menu-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.guests-menu-container svg {
+  height: 20px;
+  width: 20px;
+  fill: #717171;
+}
+
+.guests-menu-container span {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.check-in, .check-out {
+  flex: 1;
+}
+
+.guests-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.search-button {
+  display: contents;
+}
+
+.guests, .search-button {
+  flex: 1;
+}
+/* 
+#magnifier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.lines-btw-els {
+  border-right: 1px solid #ddd;
+  flex: 0 0 0;
+  height: 32px;
+  align-self: center;
+  box-sizing: border-box;
+}
+
+.icons-img {
+  height: 24px;
+  width: 24px;
+  opacity: 0.6742081447963801;
+  transition: 0.2s;
+}
+
+.icons-img:hover {
+  opacity:unset;
+}
+
+.stay-choices-elements {
+  display: flex;
+  gap: 20px;
+  font-size: smaller;
 }
