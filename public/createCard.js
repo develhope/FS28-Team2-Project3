@@ -1,382 +1,382 @@
 const strutture = [
   {
       images: [
-          'images/structures/boats/napoli/img1.webp',
-          'images/structures/boats/napoli/img2.webp',
-          'images/structures/boats/napoli/img3.webp',
-          'images/structures/boats/napoli/img4.webp',
-          'images/structures/boats/napoli/img5.webp',
-          'images/structures/boats/napoli/img6.webp'
+          '../assets/images/structures/boats/napoli/img1.webp',
+          '../assets/images/structures/boats/napoli/img2.webp',
+          '../assets/images/structures/boats/napoli/img3.webp',
+          '../assets/images/structures/boats/napoli/img4.webp',
+          '../assets/images/structures/boats/napoli/img5.webp',
+          '../assets/images/structures/boats/napoli/img6.webp'
       ], location: 'Napoli, Italia', host: 'azienda specializzata', price: '7.623 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/spalato/img1.webp',
-          'images/structures/boats/spalato/img2.webp',
-          'images/structures/boats/spalato/img3.webp',
-          'images/structures/boats/spalato/img4.webp',
-          'images/structures/boats/spalato/img5.webp',
-          'images/structures/boats/spalato/img6.webp',
-          'images/structures/boats/spalato/img7.webp'
+          '../assets/images/structures/boats/spalato/img1.webp',
+          '../assets/images/structures/boats/spalato/img2.webp',
+          '../assets/images/structures/boats/spalato/img3.webp',
+          '../assets/images/structures/boats/spalato/img4.webp',
+          '../assets/images/structures/boats/spalato/img5.webp',
+          '../assets/images/structures/boats/spalato/img6.webp',
+          '../assets/images/structures/boats/spalato/img7.webp'
 
       ], location: 'Spalato, Croazia', host: 'azienda specializzata', price: '3.516 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/capri/img1.webp',
-          'images/structures/boats/capri/img2.webp',
-          'images/structures/boats/capri/img3.webp',
-          'images/structures/boats/capri/img4.webp',
-          'images/structures/boats/capri/img5.webp'
+          '../assets/images/structures/boats/capri/img1.webp',
+          '../assets/images/structures/boats/capri/img2.webp',
+          '../assets/images/structures/boats/capri/img3.webp',
+          '../assets/images/structures/boats/capri/img4.webp',
+          '../assets/images/structures/boats/capri/img5.webp'
       ], location: 'Capri, Italia', host: 'azienda specializzata', price: '4.000 € notte', rating: '2 recensioni', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/positano/img1.webp',
-          'images/structures/boats/positano/img2.webp',
-          'images/structures/boats/positano/img3.webp',
-          'images/structures/boats/positano/img4.webp',
-          'images/structures/boats/positano/img5.webp'
+          '../assets/images/structures/boats/positano/img1.webp',
+          '../assets/images/structures/boats/positano/img2.webp',
+          '../assets/images/structures/boats/positano/img3.webp',
+          '../assets/images/structures/boats/positano/img4.webp',
+          '../assets/images/structures/boats/positano/img5.webp'
       ], location: 'Positano, Italia', host: 'Giuseppe', price: '3.700 € notte', rating: '8 recensioni', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/castMare/img1.webp',
-          'images/structures/boats/castMare/img2.webp',
-          'images/structures/boats/castMare/img3.webp',
-          'images/structures/boats/castMare/img4.webp',
-          'images/structures/boats/castMare/img5.webp',
-          'images/structures/boats/castMare/img6.webp',
-          'images/structures/boats/castMare/img7.webp'
+          '../assets/images/structures/boats/castMare/img1.webp',
+          '../assets/images/structures/boats/castMare/img2.webp',
+          '../assets/images/structures/boats/castMare/img3.webp',
+          '../assets/images/structures/boats/castMare/img4.webp',
+          '../assets/images/structures/boats/castMare/img5.webp',
+          '../assets/images/structures/boats/castMare/img6.webp',
+          '../assets/images/structures/boats/castMare/img7.webp'
       ], location: 'Castellammare di Stabia, Italia', host: 'azienda specializzata', price: '600 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/seget/img1.webp',
-          'images/structures/boats/seget/img2.webp',
-          'images/structures/boats/seget/img3.webp',
-          'images/structures/boats/seget/img4.webp',
-          'images/structures/boats/seget/img5.webp'
+          '../assets/images/structures/boats/seget/img1.webp',
+          '../assets/images/structures/boats/seget/img2.webp',
+          '../assets/images/structures/boats/seget/img3.webp',
+          '../assets/images/structures/boats/seget/img4.webp',
+          '../assets/images/structures/boats/seget/img5.webp'
       ], location: 'Seget Donji, Croazia', host: 'Emily', price: '986 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/marina/img1.webp',
-          'images/structures/boats/marina/img2.webp',
-          'images/structures/boats/marina/img3.webp'
+          '../assets/images/structures/boats/marina/img1.webp',
+          '../assets/images/structures/boats/marina/img2.webp',
+          '../assets/images/structures/boats/marina/img3.webp'
 
       ], location: 'Marina, Croazia', host: 'Krysztof', price: '235 € notte', rating: '1 recensione', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/pescara/img1.webp',
-          'images/structures/boats/pescara/img2.webp',
-          'images/structures/boats/pescara/img3.webp',
-          'images/structures/boats/pescara/img4.webp'
+          '../assets/images/structures/boats/pescara/img1.webp',
+          '../assets/images/structures/boats/pescara/img2.webp',
+          '../assets/images/structures/boats/pescara/img3.webp',
+          '../assets/images/structures/boats/pescara/img4.webp'
 
       ], location: 'Pescara, Italia', host: 'Paolo', price: '170 € notte', rating: '1 recensione', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/sorrento/img1.webp',
-          'images/structures/boats/sorrento/img2.webp',
-          'images/structures/boats/sorrento/img3.webp'
+          '../assets/images/structures/boats/sorrento/img1.webp',
+          '../assets/images/structures/boats/sorrento/img2.webp',
+          '../assets/images/structures/boats/sorrento/img3.webp'
 
       ], location: 'Sorrento, Italia', host: 'Giuseppe', price: '4.500 € notte', rating: '19 recensioni', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/marbella/img1.webp',
-          'images/structures/boats/marbella/img2.webp',
-          'images/structures/boats/marbella/img3.webp',
-          'images/structures/boats/marbella/img4.webp',
-          'images/structures/boats/marbella/img5.webp',
-          'images/structures/boats/marbella/img6.webp'
+          '../assets/images/structures/boats/marbella/img1.webp',
+          '../assets/images/structures/boats/marbella/img2.webp',
+          '../assets/images/structures/boats/marbella/img3.webp',
+          '../assets/images/structures/boats/marbella/img4.webp',
+          '../assets/images/structures/boats/marbella/img5.webp',
+          '../assets/images/structures/boats/marbella/img6.webp'
       ], location: 'Marbella, Spagna', host: 'Martyn', price: '5.873 € notte', rating: 'amato dagli ospiti', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/bora/img1.webp',
-          'images/structures/boats/bora/img2.webp',
-          'images/structures/boats/bora/img3.webp',
-          'images/structures/boats/bora/img4.webp',
-          'images/structures/boats/bora/img5.webp'
+          '../assets/images/structures/boats/bora/img1.webp',
+          '../assets/images/structures/boats/bora/img2.jpg',
+          '../assets/images/structures/boats/bora/img3.jpg',
+          '../assets/images/structures/boats/bora/img4.jpg',
+          '../assets/images/structures/boats/bora/img5.jpg'
       ], location: 'Bora Bora, Polinesia Francese', host: 'Phylip', price: '957 €', rating: '17 recensioni', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/key/img1.webp',
-          'images/structures/boats/key/img2.webp',
-          'images/structures/boats/key/img3.webp',
-          'images/structures/boats/key/img4.webp'
+          '../assets/images/structures/boats/key/img1.webp',
+          '../assets/images/structures/boats/key/img2.webp',
+          '../assets/images/structures/boats/key/img3.webp',
+          '../assets/images/structures/boats/key/img4.webp'
 
       ], location: 'Key Largo, Florida', host: 'Kennet', price: '854 € notte', rating: '53 recensioni', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/palma/img1.webp',
-          'images/structures/boats/palma/img2.webp',
-          'images/structures/boats/palma/img3.webp',
-          'images/structures/boats/palma/img4.webp',
-          'images/structures/boats/palma/img5.webp',
-          'images/structures/boats/palma/img6.webp'
+          '../assets/images/structures/boats/palma/img1.webp',
+          '../assets/images/structures/boats/palma/img2.webp',
+          '../assets/images/structures/boats/palma/img3.webp',
+          '../assets/images/structures/boats/palma/img4.webp',
+          '../assets/images/structures/boats/palma/img5.webp',
+          '../assets/images/structures/boats/palma/img6.webp'
       ], location: 'Palma di Majorca, Spagna', host: 'Carlos', price: '900 € notte', rating: 'amato dagli ospiti', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/vico/img1.webp',
-          'images/structures/boats/vico/img2.webp',
-          'images/structures/boats/vico/img3.webp',
-          'images/structures/boats/vico/img4.webp'
+          '../assets/images/structures/boats/vico/img1.webp',
+          '../assets/images/structures/boats/vico/img2.webp',
+          '../assets/images/structures/boats/vico/img3.webp',
+          '../assets/images/structures/boats/vico/img4.webp'
 
       ], location: 'Vico Equense, Italia', host: 'Marco', price: '2.800 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/rogo/img1.webp',
-          'images/structures/boats/rogo/img2.webp',
-          'images/structures/boats/rogo/img3.webp'
+          '../assets/images/structures/boats/rogo/img1.webp',
+          '../assets/images/structures/boats/rogo/img2.webp',
+          '../assets/images/structures/boats/rogo/img3.webp'
 
       ], location: 'Rogosnizza, Croazia', host: 'Hannes', price: '225 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/napoli2/img1.webp',
-          'images/structures/boats/napoli2/img2.webp',
-          'images/structures/boats/napoli2/img3.webp',
-          'images/structures/boats/napoli2/img4.webp'
+          '../assets/images/structures/boats/napoli2/img1.webp',
+          '../assets/images/structures/boats/napoli2/img2.webp',
+          '../assets/images/structures/boats/napoli2/img3.webp',
+          '../assets/images/structures/boats/napoli2/img4.webp'
 
       ], location: 'Napoli, Italia', host: 'Alessia', price: '13.680 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/vico/img1.webp',
-          'images/structures/boats/vico/img2.webp',
-          'images/structures/boats/vico/img3.webp',
-          'images/structures/boats/vico/img4.webp'
+          '../assets/images/structures/boats/vico/img1.webp',
+          '../assets/images/structures/boats/vico/img2.webp',
+          '../assets/images/structures/boats/vico/img3.webp',
+          '../assets/images/structures/boats/vico/img4.webp'
 
       ], location: 'Vico Equense, Italia', host: 'Roberto', price: '1.791 € notte', rating: '1 recensione', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/boats/nisida/img1.webp',
-          'images/structures/boats/nisida/img2.webp',
-          'images/structures/boats/nisida/img3.webp',
-          'images/structures/boats/nisida/img4.webp',
-          'images/structures/boats/nisida/img5.webp'
+          '../assets/images/structures/boats/nisida/img1.webp',
+          '../assets/images/structures/boats/nisida/img2.webp',
+          '../assets/images/structures/boats/nisida/img3.webp',
+          '../assets/images/structures/boats/nisida/img4.webp',
+          '../assets/images/structures/boats/nisida/img5.webp'
 
       ], location: 'Nisida, Italia', host: 'Robert', price: '800 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/nerano/img1.webp',
-          'images/structures/boats/nerano/img2.webp',
-          'images/structures/boats/nerano/img3.webp',
-          'images/structures/boats/nerano/img4.webp',
-          'images/structures/boats/nerano/img5.webp'
+          '../assets/images/structures/boats/nerano/img1.webp',
+          '../assets/images/structures/boats/nerano/img2.webp',
+          '../assets/images/structures/boats/nerano/img3.webp',
+          '../assets/images/structures/boats/nerano/img4.webp',
+          '../assets/images/structures/boats/nerano/img5.webp'
 
       ], location: 'Nerano, Italia', host: 'Sorrento', price: '1.500 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: false
   },
   {
       images: [
-          'images/structures/boats/ischia/img1.webp',
-          'images/structures/boats/ischia/img2.webp',
-          'images/structures/boats/ischia/img3.webp',
-          'images/structures/boats/ischia/img4.webp',
-          'images/structures/boats/ischia/img5.webp',
-          'images/structures/boats/ischia/img6.webp'
+          '../assets/images/structures/boats/ischia/img1.webp',
+          '../assets/images/structures/boats/ischia/img2.webp',
+          '../assets/images/structures/boats/ischia/img3.webp',
+          '../assets/images/structures/boats/ischia/img4.webp',
+          '../assets/images/structures/boats/ischia/img5.webp',
+          '../assets/images/structures/boats/ischia/img6.webp'
       ], location: 'Ischia, Italia', host: 'Francesco', price: '2.500 € notte', rating: 'ancora nessuna recensione', category: 'barche', loved: true
   },
   {
       images: [
-          'images/structures/huts/bormio/img1.webp',
-          'images/structures/huts/bormio/img2.webp',
-          'images/structures/huts/bormio/img3.webp',
-          'images/structures/huts/bormio/img4.webp',
-          'images/structures/huts/bormio/img5.webp',
-          'images/structures/huts/bormio/img6.webp'
+          '../assets/images/structures/huts/bormio/img1.webp',
+          '../assets/images/structures/huts/bormio/img2.webp',
+          '../assets/images/structures/huts/bormio/img3.webp',
+          '../assets/images/structures/huts/bormio/img4.webp',
+          '../assets/images/structures/huts/bormio/img5.webp',
+          '../assets/images/structures/huts/bormio/img6.webp'
       ], location: 'Bormio, Italia', host: 'Debora', price: '1.584 € notte', rating: '75 recensioni', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/stAntonio/img1.webp',
-          'images/structures/huts/stAntonio/img2.webp',
-          'images/structures/huts/stAntonio/img3.webp',
-          'images/structures/huts/stAntonio/img4.webp',
-          'images/structures/huts/stAntonio/img5.webp',
-          'images/structures/huts/stAntonio/img6.webp',
-          'images/structures/huts/stAntonio/img7.webp'
+          '../assets/images/structures/huts/stAntonio/img1.webp',
+          '../assets/images/structures/huts/stAntonio/img2.webp',
+          '../assets/images/structures/huts/stAntonio/img3.webp',
+          '../assets/images/structures/huts/stAntonio/img4.webp',
+          '../assets/images/structures/huts/stAntonio/img5.webp',
+          '../assets/images/structures/huts/stAntonio/img6.webp',
+          '../assets/images/structures/huts/stAntonio/img7.webp'
 
       ], location: 'SantAntonio di Bavignola, Italia', host: 'Jim', price: '2.190 €', rating: '1 recensione', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/vincenzo/img1.webp',
-          'images/structures/huts/vincenzo/img2.webp',
-          'images/structures/huts/vincenzo/img3.webp',
-          'images/structures/huts/vincenzo/img4.webp',
-          'images/structures/huts/vincenzo/img5.webp',
-          'images/structures/huts/vincenzo/img6.webp'
+          '../assets/images/structures/huts/vincenzo/img1.webp',
+          '../assets/images/structures/huts/vincenzo/img2.webp',
+          '../assets/images/structures/huts/vincenzo/img3.webp',
+          '../assets/images/structures/huts/vincenzo/img4.webp',
+          '../assets/images/structures/huts/vincenzo/img5.webp',
+          '../assets/images/structures/huts/vincenzo/img6.webp'
 
       ], location: 'San Vincenzo, Italia', host: 'Gio', price: '4.800 € notte', rating: 'ancora nessuna recensione', category: 'baite', loved: false
   },
   {
       images: [
-          'images/structures/huts/renon/img1.webp',
-          'images/structures/huts/renon/img2.webp',
-          'images/structures/huts/renon/img3.webp',
-          'images/structures/huts/renon/img4.webp',
-          'images/structures/huts/renon/img5.webp',
-          'images/structures/huts/renon/img6.webp'
+          '../assets/images/structures/huts/renon/img1.webp',
+          '../assets/images/structures/huts/renon/img2.webp',
+          '../assets/images/structures/huts/renon/img3.webp',
+          '../assets/images/structures/huts/renon/img4.webp',
+          '../assets/images/structures/huts/renon/img5.webp',
+          '../assets/images/structures/huts/renon/img6.webp'
 
       ], location: 'Renon, Italia', host: 'Paolo', price: '4.266 € notte', rating: 'ancora nessuna recensione', category: 'baite', loved: false
   },
   {
       images: [
-          'images/structures/huts/arabba/img1.webp',
-          'images/structures/huts/arabba/img2.webp',
-          'images/structures/huts/arabba/img3.webp',
-          'images/structures/huts/arabba/img4.webp',
-          'images/structures/huts/arabba/img5.webp',
-          'images/structures/huts/arabba/img6.webp',
-          'images/structures/huts/arabba/img7.webp'
+          '../assets/images/structures/huts/arabba/img1.webp',
+          '../assets/images/structures/huts/arabba/img2.webp',
+          '../assets/images/structures/huts/arabba/img3.webp',
+          '../assets/images/structures/huts/arabba/img4.webp',
+          '../assets/images/structures/huts/arabba/img5.webp',
+          '../assets/images/structures/huts/arabba/img6.webp',
+          '../assets/images/structures/huts/arabba/img7.webp'
 
 
       ], location: 'Arabba Dolomiti, Italia', host: 'SantAndrea', price: '4.248 € notte', rating: 'ancora nessuna recensione', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/madonna/img1.webp',
-          'images/structures/huts/madonna/img2.webp',
-          'images/structures/huts/madonna/img3.webp',
-          'images/structures/huts/madonna/img4.webp',
-          'images/structures/huts/madonna/img5.webp',
-          'images/structures/huts/madonna/img6.webp'
+          '../assets/images/structures/huts/madonna/img1.webp',
+          '../assets/images/structures/huts/madonna/img2.webp',
+          '../assets/images/structures/huts/madonna/img3.webp',
+          '../assets/images/structures/huts/madonna/img4.webp',
+          '../assets/images/structures/huts/madonna/img5.webp',
+          '../assets/images/structures/huts/madonna/img6.webp'
 
       ], location: 'Madonna di Campiglio, Italia', host: 'Matteo', price: '1.800 € notte', rating: '4 recensioni', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/giustino/img1.webp',
-          'images/structures/huts/giustino/img2.webp',
-          'images/structures/huts/giustino/img3.webp',
-          'images/structures/huts/giustino/img4.webp'
+          '../assets/images/structures/huts/giustino/img1.webp',
+          '../assets/images/structures/huts/giustino/img2.webp',
+          '../assets/images/structures/huts/giustino/img3.webp',
+          '../assets/images/structures/huts/giustino/img4.webp'
       ], location: 'Giustino, loc. Pescicoltura, Italia', host: 'chalet Casa al Campo', price: '737 € notte', rating: 'amato dagli ospiti', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/klippitz/img1.webp',
-          'images/structures/huts/klippitz/img2.webp',
-          'images/structures/huts/klippitz/img3.webp',
-          'images/structures/huts/klippitz/img4.webp',
-          'images/structures/huts/klippitz/img5.webp'
+          '../assets/images/structures/huts/klippitz/img1.webp',
+          '../assets/images/structures/huts/klippitz/img2.webp',
+          '../assets/images/structures/huts/klippitz/img3.webp',
+          '../assets/images/structures/huts/klippitz/img4.webp',
+          '../assets/images/structures/huts/klippitz/img5.webp'
       ], location: 'Klippitztörl, Austria', host: 'Vitaly', price: '1.000 € notte', rating: '1 recensione', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/davos/img1.webp',
-          'images/structures/huts/davos/img2.webp',
-          'images/structures/huts/davos/img3.webp',
-          'images/structures/huts/davos/img4.webp'
+          '../assets/images/structures/huts/davos/img1.webp',
+          '../assets/images/structures/huts/davos/img2.webp',
+          '../assets/images/structures/huts/davos/img3.webp',
+          '../assets/images/structures/huts/davos/img4.webp'
       ], location: 'Davos Platz, Austria', host: 'Emma', price: '2.072 € notte', rating: 'ancora nessuna recensione', category: 'baite', loved: false
   },
   {
       images: [
-          'images/structures/huts/teola/img1.webp',
-          'images/structures/huts/teola/img2.webp',
-          'images/structures/huts/teola/img3.webp',
-          'images/structures/huts/teola/img4.webp',
-          'images/structures/huts/teola/img5.webp'
+          '../assets/images/structures/huts/teola/img1.webp',
+          '../assets/images/structures/huts/teola/img2.webp',
+          '../assets/images/structures/huts/teola/img3.webp',
+          '../assets/images/structures/huts/teola/img4.webp',
+          '../assets/images/structures/huts/teola/img5.webp'
       ], location: 'Teola, Italia', host: 'Holidu', price: '1.092 € notte', rating: '3 recensioni', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/saltusio/img1.webp',
-          'images/structures/huts/saltusio/img2.webp',
-          'images/structures/huts/saltusio/img3.webp',
-          'images/structures/huts/saltusio/img4.webp',
-          'images/structures/huts/saltusio/img5.webp'
+          '../assets/images/structures/huts/saltusio/img1.webp',
+          '../assets/images/structures/huts/saltusio/img2.webp',
+          '../assets/images/structures/huts/saltusio/img3.webp',
+          '../assets/images/structures/huts/saltusio/img4.webp',
+          '../assets/images/structures/huts/saltusio/img5.webp'
       ], location: 'Saltusio, Italia', host: 'Sabine', price: '817 € notte', rating: '11 recensioni', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/ober/img1.webp',
-          'images/structures/huts/ober/img2.webp',
-          'images/structures/huts/ober/img3.webp',
-          'images/structures/huts/ober/img4.webp',
-          'images/structures/huts/ober/img5.webp',
-          'images/structures/huts/ober/img6.webp'
+          '../assets/images/structures/huts/ober/img1.webp',
+          '../assets/images/structures/huts/ober/img2.webp',
+          '../assets/images/structures/huts/ober/img3.webp',
+          '../assets/images/structures/huts/ober/img4.webp',
+          '../assets/images/structures/huts/ober/img5.webp',
+          '../assets/images/structures/huts/ober/img6.webp'
 
       ], location: 'Obertilliach, Austria', host: 'Lukas', price: '1.080 € notte', rating: '9 recensioni', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/laValle/img1.webp',
-          'images/structures/huts/laValle/img2.webp',
-          'images/structures/huts/laValle/img3.webp',
-          'images/structures/huts/laValle/img4.webp',
-          'images/structures/huts/laValle/img5.webp',
-          'images/structures/huts/laValle/img6.webp'
+          '../assets/images/structures/huts/laValle/img1.webp',
+          '../assets/images/structures/huts/laValle/img2.webp',
+          '../assets/images/structures/huts/laValle/img3.webp',
+          '../assets/images/structures/huts/laValle/img4.webp',
+          '../assets/images/structures/huts/laValle/img5.webp',
+          '../assets/images/structures/huts/laValle/img6.webp'
 
       ], location: 'La Valle, Wengen, Italia', host: 'Giulia', price: '765 € notte', rating: '61 recensioni', category: 'baite', loved: false
   },
   {
       images: [
-          'images/structures/huts/predazzo/img1.webp',
-          'images/structures/huts/predazzo/img2.webp',
-          'images/structures/huts/predazzo/img3.webp',
-          'images/structures/huts/predazzo/img4.webp',
-          'images/structures/huts/predazzo/img5.webp',
-          'images/structures/huts/predazzo/img6.webp'
+          '../assets/images/structures/huts/predazzo/img1.webp',
+          '../assets/images/structures/huts/predazzo/img2.webp',
+          '../assets/images/structures/huts/predazzo/img3.webp',
+          '../assets/images/structures/huts/predazzo/img4.webp',
+          '../assets/images/structures/huts/predazzo/img5.webp',
+          '../assets/images/structures/huts/predazzo/img6.webp'
 
       ], location: 'Predazzo, Italia', host: 'Federica', price: '700 € notte', rating: '1 recensione', category: 'baite', loved: false
   },
   {
       images: [
-          'images/structures/huts/bad/img1.webp',
-          'images/structures/huts/bad/img2.webp',
-          'images/structures/huts/bad/img3.webp',
-          'images/structures/huts/bad/img4.webp',
-          'images/structures/huts/bad/img5.webp',
-          'images/structures/huts/bad/img6.webp'
+          '../assets/images/structures/huts/bad/img1.webp',
+          '../assets/images/structures/huts/bad/img2.webp',
+          '../assets/images/structures/huts/bad/img3.webp',
+          '../assets/images/structures/huts/bad/img4.webp',
+          '../assets/images/structures/huts/bad/img5.webp',
+          '../assets/images/structures/huts/bad/img6.webp'
 
       ], location: 'Bad Kleinkirchheim, Austria', host: 'Sophie -BELVILLA', price: '1.041 € notte', rating: '13 recensioni', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/seelis/img1.webp',
-          'images/structures/huts/seelis/img2.webp',
-          'images/structures/huts/seelis/img3.webp',
-          'images/structures/huts/seelis/img4.webp'
+          '../assets/images/structures/huts/seelis/img1.webp',
+          '../assets/images/structures/huts/seelis/img2.webp',
+          '../assets/images/structures/huts/seelis/img3.webp',
+          '../assets/images/structures/huts/seelis/img4.webp'
       ], location: 'Seelisberg, Austria', host: 'Emanuel and Majken', price: '611 € notte', rating: '3 recensioni', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/pack/img1.webp',
-          'images/structures/huts/pack/img2.webp',
-          'images/structures/huts/pack/img3.webp',
-          'images/structures/huts/pack/img4.webp'
+          '../assets/images/structures/huts/pack/img1.webp',
+          '../assets/images/structures/huts/pack/img2.webp',
+          '../assets/images/structures/huts/pack/img3.webp',
+          '../assets/images/structures/huts/pack/img4.webp'
       ], location: 'Pack, Austria', host: 'HMS Hütten Miet Service GmbH', price: '1.070 € notte', rating: 'ancora nessuna recensione', category: 'baite', loved: false
   },
   {
       images: [
-          'images/structures/huts/stazzona/img1.webp',
-          'images/structures/huts/stazzona/img2.webp',
-          'images/structures/huts/stazzona/img3.webp',
-          'images/structures/huts/stazzona/img4.webp',
-          'images/structures/huts/stazzona/img5.webp',
-          'images/structures/huts/stazzona/img6.webp'
+          '../assets/images/structures/huts/stazzona/img1.webp',
+          '../assets/images/structures/huts/stazzona/img2.webp',
+          '../assets/images/structures/huts/stazzona/img3.webp',
+          '../assets/images/structures/huts/stazzona/img4.webp',
+          '../assets/images/structures/huts/stazzona/img5.webp',
+          '../assets/images/structures/huts/stazzona/img6.webp'
       ], location: 'Stazzona, Italia', host: 'Northitaly Villas', price: '2.700 € notte', rating: '2 recensioni', category: 'baite', loved: true
   },
   {
       images: [
-          'images/structures/huts/gersau/img1.webp',
-          'images/structures/huts/gersau/img2.webp',
-          'images/structures/huts/gersau/img3.webp',
-          'images/structures/huts/gersau/img4.webp',
-          'images/structures/huts/gersau/img5.webp',
-          'images/structures/huts/gersau/img5.webp',
-          'images/structures/huts/gersau/img6.webp'
+          '../assets/images/structures/huts/gersau/img1.webp',
+          '../assets/images/structures/huts/gersau/img2.webp',
+          '../assets/images/structures/huts/gersau/img3.webp',
+          '../assets/images/structures/huts/gersau/img4.webp',
+          '../assets/images/structures/huts/gersau/img5.webp',
+          '../assets/images/structures/huts/gersau/img5.webp',
+          '../assets/images/structures/huts/gersau/img6.webp'
       ], location: 'Gersau, Svizzera', host: 'Mathias', price: '2.052 € notte', rating: '7 recensioni', category: 'baite', loved: true
   },
   {
@@ -783,24 +783,47 @@ const strutture = [
 ];
 
 function renderListings(filteredListing) {
-  const listingGrid = document.getElementById('listing-grid');
-  listingGrid.innerHTML = ''; // Pulisce la griglia
-
-  filteredListing.forEach(listing => {
+    const cardContainer = document.querySelector('.card-container');
+    cardContainer.innerHTML = ''; // Pulisce il contenuto precedente
+  
+    filteredListing.forEach(listing => {
       const card = document.createElement('div');
       card.classList.add('card');
-      const imagesHTML = listing.images.map(image => `<img src="${image}" alt="${listing.name} image">`).join('');
-      
+  
+      const imagesHTML = listing.images.map(image => `
+        <div class="swiper-slide">
+            <img src="${image}" alt="${listing.location} image">
+        </div>
+      `).join('');
+  
       card.innerHTML = `
-          <div class="carousel">
+        <div class="card-image swiper-container">
+            <div class="swiper-wrapper swiper-slide">
               ${imagesHTML}
-          </div>
-          <h3>${listing.name}</h3>
-          <p>Host: ${listing.host}</p>
-          <p>Rating: ${listing.rating}</p>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="card-content">
+            <h2 class="location">${listing.location}</h2>
+            <p class="host">${listing.host}<br>${listing.price}</p>
+            <div class="rating-price">
+              <span class="rating">${listing.rating}</span>
+              <span class="price">${listing.price}</span>
+            </div>
+        </div>
       `;
-      listingGrid.appendChild(card);
-  });
+  
+      cardContainer.appendChild(card);
+  
+      // Inizializza Swiper per ogni carosello
+      new Swiper(card.querySelector('.swiper-container'), {
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      });
+    });
 }
 
 // Gestione del clic sulle icone per filtrare le strutture
