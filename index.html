@@ -12,6 +12,8 @@
       type="image/png"
     />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/swiper-bundle.min.css">
   </head>
   <body>
     <header>
@@ -732,7 +734,6 @@
         </div>
       </div>
     </header>
-    <main>
       <!-- Barra di navigazione per la scelta del tipo di alloggio o di attività fino alla riga 1599 -->
       <div>
         <div class="stay-choices-nav">
@@ -1601,9 +1602,13 @@
         </div>
       </div>
       <div>
-        <!-- Da inserire i vari contenuti del main -->
+        <main>
+          <!-- Da inserire i vari contenuti del main -->
+          <div class="card-container" id="listing-grid"></div>
+          <script src="JS/swiper-bundle.min.js"></script>
+          <script src="JS/createCard.js" defer></script>
+        </main>
       </div>
-    </main>
     <footer>
       <div>
         <h2>Ispirazione per viaggi futuri</h2>
@@ -1648,5 +1653,7 @@
       </div>
     </footer>
     <script src="JS/scripts.js"></script>
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/createCard.js" defer></script>
   </body>
 </html>

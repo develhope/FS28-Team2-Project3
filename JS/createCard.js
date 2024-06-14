@@ -1,7 +1,7 @@
 const strutture = [
   {
       images: [
-          '../assets/images/structures/boats/napoli/img1.webp',
+          'assets/images/structures/boats/napoli/img1.webp',
           '../assets/images/structures/boats/napoli/img2.webp',
           '../assets/images/structures/boats/napoli/img3.webp',
           '../assets/images/structures/boats/napoli/img4.webp',
@@ -792,7 +792,7 @@ function renderListings(filteredListing) {
   
       const imagesHTML = listing.images.map(image => `
         <div class="swiper-slide">
-            <img src="${image}" alt="${listing.location} image">
+            <img src="${image.replace('../', '')}" alt="${listing.location} image">
         </div>
       `).join('');
   
