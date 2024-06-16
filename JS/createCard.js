@@ -806,7 +806,7 @@ function renderListings(filteredListing) {
         </div>
         <div class="card-content">
             <h2 class="location">${listing.location}</h2>
-            <p class="host">${listing.host}<br>${listing.price}</p>
+            <p class="host">Host:${listing.host}<br>01-07 lug</p>
             <div class="rating-price">
               <span class="rating">${listing.rating}</span>
               <span class="price">${listing.price}</span>
