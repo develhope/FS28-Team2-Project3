@@ -67,10 +67,10 @@ html, body{
 /* Utilizzo del media query per la responsività del logo (switch da logo con titolo a solo logo) */
 
 @media (max-width: 1125px) {
-  #full-logo {
+  .logo-l {
     display: none;
   }
-  #small-logo {
+  .logo-s {
     display: inline;
   }
 }
@@ -91,7 +91,11 @@ header {
   height: 80px;
 }
 
-.logo-l {
+.logo-s {
+  display: none;
+}
+
+.m-80 {
   /* margin-top: 24px; */
   margin-left: 80px;
 }

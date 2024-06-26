@@ -353,9 +353,9 @@ const strutture = [
   {
       images: [
           '../assets/images/structures/huts/pack/img1.webp',
-          '../assets/images/structures/huts/pack/img2.webp',
-          '../assets/images/structures/huts/pack/img3.webp',
-          '../assets/images/structures/huts/pack/img4.webp'
+          '../assets/images/structures/huts/pack/img2.jpeg',
+          '../assets/images/structures/huts/pack/img3.jpeg',
+          '../assets/images/structures/huts/pack/img4.jpeg'
       ], location: 'Pack, Austria', host: 'HMS Hütten Miet Service GmbH', price: '1.070 € notte', rating: 'ancora nessuna recensione', category: 'baite', loved: false
   },
   {
@@ -591,10 +591,11 @@ const strutture = [
   {
       images: [
           '../assets/images/structures/tree/nicasio/img1.webp',
-          '../assets/images/structures/tree/nicasio/img2.webp',
+          '../assets/images/structures/tree/nicasio/img2.jpeg',
           '../assets/images/structures/tree/nicasio/img3.webp',
           '../assets/images/structures/tree/nicasio/img4.webp',
-          '../assets/images/structures/tree/nicasio/img5.webp'
+          '../assets/images/structures/tree/nicasio/img5.webp',
+          '../assets/images/structures/tree/nicasio/img6.webp'
       ], location: 'Nicasio, california, Stati Uniti', host: 'Karin', price: '1.327 €', rating: '100 recensioni', category: 'case albero', loved: true
   },
   {
@@ -613,7 +614,7 @@ const strutture = [
           '../assets/images/structures/tree/heald/img3.webp',
           '../assets/images/structures/tree/heald/img4.jpeg',
           '../assets/images/structures/tree/heald/img5.webp',
-          '../assets/images/structures/tree/heald/img6.jpeg'
+          '../assets/images/structures/tree/heald/img6.jpg'
       ], location: 'Healdsburg, California, Stati Uniti', host: 'Chris', price: '716 € notte', rating: '141 recensioni', category: 'case albero', loved: true
   },
   {
@@ -664,7 +665,7 @@ const strutture = [
           '../assets/images/structures/tree/hainburg/img3.webp',
           '../assets/images/structures/tree/hainburg/img4.webp',
           '../assets/images/structures/tree/hainburg/img5.webp',
-          '../assets/images/structures/tree/hainburg/img6.web'
+          '../assets/images/structures/tree/hainburg/img6.webp'
       ], location: 'Hainburg an der Donau, Austria', host: 'Maria', price: '71 € notte', rating: '66 recensioni', category: 'case albero', loved: false
   },
   {
@@ -763,12 +764,13 @@ const strutture = [
   },
   {
       images: [
-          '../assets/images/structures/tree/abians/img1.webp',
-          '../assets/images/structures/tree/abians/img2.webp',
-          '../assets/images/structures/tree/abians/img3.webp',
-          '../assets/images/structures/tree/abians/img4.webp',
-          '../assets/images/structures/tree/abians/img5.webp'
-      ], location: 'Abiansemal, Indonesia', host: 'Wajan', price: '396 € notte', rating: '279 recensioni', category: 'case albero', loved: true
+          '../assets/images/structures/tree/notredam/img1.webp',
+          '../assets/images/structures/tree/notredam/img2.webp',
+          '../assets/images/structures/tree/notredam/img3.webp',
+          '../assets/images/structures/tree/notredam/img4.webp',
+          '../assets/images/structures/tree/notredam/img5.webp',
+          '../assets/images/structures/tree/notredam/img6.webp'
+      ], location: 'Notre-Dam-De-Boisset, Francia', host: 'Nicolas', price: '80 € notte', rating: '110 recensioni', category: 'case albero', loved: true
   },
   {
       images: [
