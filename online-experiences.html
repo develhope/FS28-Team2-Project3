@@ -10,8 +10,9 @@
       type="image/png"
     />
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/style-2-page.css" />
   </head>
-  <body>
+  <body id="oe-body">
     <header>
       <div class="navbar">
         <!-- logo container -->
@@ -134,11 +135,11 @@
     </header>
     <main>
       <div class="week-updates">
-        <div>
+        <div id="wu-container">
           <div class="wu-title">
             <h1>Novit&agrave; di questa settimana</h1>
           </div>
-          <div>
+          <div id="wu-btns">
             <button class="buttons left-button" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -162,8 +163,6 @@
                 ></path>
               </svg>
             </button>
-          </div>
-          <div>
             <button class="buttons right-button" type="button">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -189,8 +188,79 @@
             </button>
           </div>
         </div>
-        <div>
-          <!-- Da inserire le collezioni -->
+        <div id="collections">
+          <div class="collection-containers">
+            <picture class="pic">
+              <img src="assets/images/online-experiences/most-popular.jpg" alt="Le pi&ugrave; popolari in tutto il mondo" />
+              <div class="coll">
+                <div>
+                  <p class="collection">Collezione</p>
+                  <p class="collection-title">
+                    Le pi&ugrave; popolari in tutto il mondo
+                  </p>
+                </div>
+                <div>
+                  <button class="show-all-btn" type="button">
+                    Mostra tutto
+                  </button>
+                </div>
+              </div>
+            </picture>
+          </div>
+          <div class="collection-containers">
+            <picture class="pic">
+              <img src="assets/images/online-experiences/itinerary-planning.jpg" alt="Easy for itinerary planning" />
+              <div class="coll">
+                <div>
+                  <p class="collection">Collezione</p>
+                  <p class="collection-title">
+                    Easy for itinerary planning
+                  </p>
+                </div>
+                <div>
+                  <button class="show-all-btn" type="button">
+                    Mostra tutto
+                  </button>
+                </div>
+              </div>
+            </picture>
+          </div>
+          <div class="collection-containers">
+            <picture class="pic">
+              <img src="assets/images/online-experiences/team-building.jpg" alt="Ideali per il team building" />
+              <div class="coll">
+                <div>
+                  <p class="collection">Collezione</p>
+                  <p class="collection-title">
+                    Ideali per il team building
+                  </p>
+                </div>
+                <div>
+                  <button class="show-all-btn" type="button">
+                    Mostra tutto
+                  </button>
+                </div>
+              </div>
+            </picture>
+          </div>
+          <div class="collection-containers">
+            <picture class="pic">
+              <img src="assets/images/online-experiences/fun-for-all-family.png" alt="Divertimento per tutta la famiglia" />
+              <div class="coll">
+                <div>
+                  <p class="collection">Collezione</p>
+                  <p class="collection-title">
+                    Divertimento per tutta la famiglia
+                  </p>
+                </div>
+                <div>
+                  <button class="show-all-btn" type="button">
+                    Mostra tutto
+                  </button>
+                </div>
+              </div>
+            </picture>
+          </div>
         </div>
       </div>
       <div class="filters-container">
@@ -200,78 +270,83 @@
             <button type="button">Dimensione del gruppo</button>
             <button type="button">Pi&ugrave; filtri</button>
           </div>
-          <div>
-            <button class="buttons left-button" type="button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-                style="
-                  display: block;
-                  fill: none;
-                  height: 12px;
-                  width: 12px;
-                  stroke: currentcolor;
-                  stroke-width: 5.33333;
-                  overflow: visible;
-                "
-              >
-                <path
-                  fill="none"
-                  d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div class="scroll-filters">
-            <button class="filter-btn" type="button">Ideale per gruppi</button>
-            <button class="filter-btn" type="button">Per le famiglie</button>
-            <button class="filter-btn" type="button">Animali</button>
-            <button class="filter-btn" type="button">Arte e scrittura</button>
-            <button class="filter-btn" type="button">Cottura al forno</button>
-            <button class="filter-btn" type="button">In cucina</button>
-            <button class="filter-btn" type="button">Danza</button>
-            <button class="filter-btn" type="button">Bevande</button>
-            <button class="filter-btn" type="button">Intrattenimento</button>
-            <button class="filter-btn" type="button">Fitness</button>
-            <button class="filter-btn" type="button">Storia e cultura</button>
-            <button class="filter-btn" type="button">Magia</button>
-            <button class="filter-btn" type="button">Musica</button>
-            <button class="filter-btn" type="button">Per il sociale</button>
-            <button class="filter-btn" type="button">Benessere</button>
-            <button class="filter-btn" type="button">
-              Atleti olimpici e paralimpici
-            </button>
-            <button class="filter-btn" type="button">
-              Progettate per l&apos;accessibilit&agrave;
-            </button>
-          </div>
-          <div>
-            <button class="buttons right-button" type="button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-                style="
-                  display: block;
-                  fill: none;
-                  height: 12px;
-                  width: 12px;
-                  stroke: currentcolor;
-                  stroke-width: 5.33333;
-                  overflow: visible;
-                "
-              >
-                <path
-                  fill="none"
-                  d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"
-                ></path>
-              </svg>
-            </button>
+          <div class="spacer"></div>
+          <div id="scroll-flt-container">
+            <div>
+              <button class="buttons left-button" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: none;
+                    height: 12px;
+                    width: 12px;
+                    stroke: currentcolor;
+                    stroke-width: 5.33333;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    fill="none"
+                    d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div class="scroll-filters">
+              <button class="filter-btn" type="button">
+                Ideale per gruppi
+              </button>
+              <button class="filter-btn" type="button">Per le famiglie</button>
+              <button class="filter-btn" type="button">Animali</button>
+              <button class="filter-btn" type="button">Arte e scrittura</button>
+              <button class="filter-btn" type="button">Cottura al forno</button>
+              <button class="filter-btn" type="button">In cucina</button>
+              <button class="filter-btn" type="button">Danza</button>
+              <button class="filter-btn" type="button">Bevande</button>
+              <button class="filter-btn" type="button">Intrattenimento</button>
+              <button class="filter-btn" type="button">Fitness</button>
+              <button class="filter-btn" type="button">Storia e cultura</button>
+              <button class="filter-btn" type="button">Magia</button>
+              <button class="filter-btn" type="button">Musica</button>
+              <button class="filter-btn" type="button">Per il sociale</button>
+              <button class="filter-btn" type="button">Benessere</button>
+              <button class="filter-btn" type="button">
+                Atleti olimpici e paralimpici
+              </button>
+              <button class="filter-btn" type="button">
+                Progettate per l&apos;accessibilit&agrave;
+              </button>
+            </div>
+            <div>
+              <button class="buttons right-button" type="button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    fill: none;
+                    height: 12px;
+                    width: 12px;
+                    stroke: currentcolor;
+                    stroke-width: 5.33333;
+                    overflow: visible;
+                  "
+                >
+                  <path
+                    fill="none"
+                    d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -603,7 +678,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div id="bottom-btn">
         <button class="load-more-btn" type="button">Carica altro</button>
       </div>
     </main>
