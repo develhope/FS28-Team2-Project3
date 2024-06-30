@@ -66,29 +66,31 @@ html, body{
 
 /* Utilizzo del media query per la responsività del logo (switch da logo con titolo a solo logo) */
 
-@media (max-width: 1125px) {
-  .logo-l {
-    display: none;
-  }
-  .logo-s {
-    display: inline;
-  }
-}
+
 
 header {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  padding-bottom: 1.5rem;
+}
 
+.nav-container {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  /* background-color: white; */
+  z-index: 10;
 }
 
 .navbar {
+  /* position: sticky; */
+  /* top: 0; */
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
   font-family: 'Cereal', sans-serif;
   background-color: white;
-  height: 80px;
+  height: 5rem;
+  z-index: 15;
 }
 
 .logo-s {
@@ -100,9 +102,26 @@ header {
   margin-left: 80px;
 }
 
+@media (max-width: 1125px) {
+  .logo-l {
+    display: none;
+  }
+  .logo-s {
+    display: inline;
+  }
+}
+
 .middle-links {
   display: flex;
+  justify-content: center;
   gap: 20px;
+  transform: translateX(20%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.links-scroll {
+  transform: translate(20%, -100px) scale(0.5);
+  opacity: 0;
 }
 
 .middle-links > button > a {
@@ -128,7 +147,7 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-right: 80px;
+  padding-right: 4rem;
 }
 
 .lang-menu-btn {
@@ -164,9 +183,12 @@ header {
 }
 
 .search-bar {
-  display: inline-block;
+  /* position: sticky; */
+  display: flex;
   border: 1px solid black;
   border-radius: 30px;
+  transform: translateX(0%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 /* funzionalità menu hamburger (da verificare lo stile successivamente) */
@@ -311,7 +333,7 @@ header {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  height: 66px;
+  height: 4rem;
 }
 
 .place,
@@ -387,6 +409,11 @@ p {
 
 .hidden {
   display: none;
+}
+
+.search-scroll {
+  transform: translate(0%, -70px) scale(0.5);
+  opacity: 0;
 }
 
 /* Grid per le immagini */
@@ -603,6 +630,10 @@ p {
   justify-content: center;
 } */
 
+.invisible {
+  display: none;
+}
+
 .lines-btw-els {
   border-right: 1px solid #ddd;
   flex: 0 0 0;
@@ -622,9 +653,17 @@ p {
   opacity:unset;
 }
 
+#stay-choices-container {
+  position: sticky;
+  top: 80px;
+  z-index: 9;
+  border-top: 1px solid #ddd;
+  background-color: white;
+}
+
 .stay-choices-nav {
-  
-padding: 0px 80px;
+  padding: 0px 80px;
+  box-shadow: 0 1px 7px -4px #999;
 }
 
 .stay-choices-elements {

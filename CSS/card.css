@@ -2,12 +2,33 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 0px 80px;
   margin: 16px 0px 48px;
+}
+
+@media (max-width: 1125px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 949px) {
+  .card-container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .card {
