@@ -710,3 +710,95 @@ input[type="radio" i] {
   right: 0;
   top: 0;
 }
+footer {
+  background-color: #fafafaee;
+}
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+.footer-list li {
+  color: #222;
+  font-weight: 500;
+}
+.footer-list a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #222;
+}
+.footer-list a:hover {
+  text-decoration: underline;
+}
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 45px;
+  padding-bottom: 45px ;
+  border-bottom: 1px solid #ddd;
+}
+.foot-final-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.copyright-links {
+  display: flex;
+  flex-direction: row;
+  color: #222;
+  gap: 8px;
+  font-weight: 300;
+  font-size: 0.87rem;
+}
+.copyright-links a {
+  text-decoration: none;
+  color: inherit;
+}
+.copyright-links a:hover {
+  text-decoration: underline;
+}
+.local-info-foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.lang-foot {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1px;
+  color: #222;
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+.lang-foot:hover {
+  text-decoration: underline;
+}
+.lang-foot button {
+  border: none; 
+  background: none; 
+  cursor: pointer;
+}
+.currency {
+  color: #222;
+  font-weight: 500;
+}
+#curr-spell {
+  font-size: 0.87rem;
+}
+#curr-spell:hover {
+  text-decoration: underline;
+}
+.local-info-foot a {
+  text-decoration: none;
+  color: #222;
+}
