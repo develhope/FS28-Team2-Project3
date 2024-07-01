@@ -63,11 +63,13 @@ async function fetchData() {
       // Puoi usare 'data' come desideri, ad esempio assegnarlo a un'altra variabile
       let jsonData = data;
 
-      function renderListings(filteredListing) {
+      function renderListings(filteredListing, maxCards = filteredListing.length) {
         const cardContainer = document.querySelector('.card-container');
         cardContainer.innerHTML = ''; // Pulisce il contenuto precedente
+
+        const limitedListing = filteredListing.slice(0, maxCards);
       
-        filteredListing.forEach(listing => {
+        limitedListing.forEach(listing => {
           const card = document.createElement('div');
           card.classList.add('card');
       
@@ -117,7 +119,7 @@ async function fetchData() {
     });
     
     // Visualizza tutte le strutture all'avvio della pagina
-    renderListings(jsonData);
+    renderListings(jsonData, 10);
 
   } catch (error) {
       console.error('Errore:', error);
