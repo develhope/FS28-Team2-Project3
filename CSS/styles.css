@@ -266,15 +266,6 @@ header {
   margin-left: 5%;
 }
 
-@media (max-width: 1125px) {
-  .logo-l {
-    display: none;
-  }
-  .logo-s {
-    display: inline;
-  }
-}
-
 .middle-links {
   display: flex;
   justify-content: center;
@@ -283,14 +274,6 @@ header {
   transition: transform 0.5s ease, opacity 0.5s ease;
   width: 40%;
   margin-inline: 30%;
-}
-
-@media (max-width: 1056px) {
-  .middle-links {
-    transform: translateY(0%);
-    /* margin-bottom: 2rem; */
-    margin-block: 2rem;
-  }
 }
 
 .links-scroll {
@@ -509,7 +492,7 @@ header {
   border-radius: 50px;
   background-color: white;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 90%;
   max-width: 800px;
   margin: 0 auto;
   height: 4rem;
@@ -891,6 +874,28 @@ input[type="radio" i] {
 footer {
   background-color: #fafafaee;
 }
+
+#popolari-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style: none;
+  padding-inline: 5%;
+}
+
+#popolari-grid li {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tabcontent-f {
+  padding-bottom: 1rem;
+}
+
+.tabcontent-f p:first-child {
+  font-weight: 600;
+}
+
 .footer-list {
   list-style: none;
   display: flex;
@@ -901,7 +906,7 @@ footer {
 }
 .footer-list li {
   color: #222;
-  font-weight: 500;
+  font-weight: 600;
 }
 .footer-list a {
   text-decoration: none;
@@ -916,17 +921,15 @@ footer {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 45px;
-  padding-bottom: 45px ;
   border-bottom: 1px solid #ddd;
+  padding-block: 5%;
 }
 .foot-final-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-block: 1.5rem;
 }
 .copyright-links {
   display: flex;
@@ -936,6 +939,11 @@ footer {
   font-weight: 300;
   font-size: 0.87rem;
 }
+
+#copyright-mobile {
+  display: none;
+}
+
 .copyright-links a {
   text-decoration: none;
   color: inherit;
@@ -947,8 +955,78 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
+  gap: 1.5rem;
 }
+
+.local-info-foot a {
+  font-weight: bold;
+}
+
+#final-foot-container {
+  padding-inline: 5%;
+}
+
+@media (max-width: 1125px) {
+  .logo-l {
+    display: none;
+  }
+  .logo-s {
+    display: inline;
+  }
+
+  #popolari-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1056px) {
+  .middle-links {
+    transform: translateY(0%);
+    /* margin-bottom: 2rem; */
+    margin-block: 2rem;
+  }
+
+  #popolari-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .foot-final-links {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+  }
+
+  #copyright-pc {
+    display: none;
+  }
+
+  #copyright-mobile {
+    display: block;
+  }
+
+  .local-info-foot {
+    margin-bottom: 1rem;
+  }
+
+  .links-container {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .footer-list {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .footer-list:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .lang-foot {
   display: flex;
   flex-direction: row;
