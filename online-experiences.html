@@ -140,7 +140,7 @@
             <h1>Novit&agrave; di questa settimana</h1>
           </div>
           <div id="wu-btns">
-            <button class="buttons left-button" type="button">
+            <button class="buttons left-button fade" type="button" disabled>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 32 32"
@@ -191,8 +191,11 @@
         <div id="collections">
           <div class="collection-containers first-element">
             <picture class="pic">
-              <img src="assets/images/online-experiences/most-popular.jpg" alt="Le pi&ugrave; popolari in tutto il mondo" />
-              <div class="coll" style="padding-left: 100px;">
+              <img
+                src="assets/images/online-experiences/most-popular.jpg"
+                alt="Le pi&ugrave; popolari in tutto il mondo"
+              />
+              <div class="coll" style="padding-left: 100px">
                 <div>
                   <p class="collection">Collezione</p>
                   <p class="collection-title">
@@ -209,13 +212,14 @@
           </div>
           <div class="collection-containers">
             <picture class="pic">
-              <img src="assets/images/online-experiences/itinerary-planning.jpg" alt="Easy for itinerary planning" />
+              <img
+                src="assets/images/online-experiences/itinerary-planning.jpg"
+                alt="Easy for itinerary planning"
+              />
               <div class="coll">
                 <div>
                   <p class="collection">Collezione</p>
-                  <p class="collection-title">
-                    Easy for itinerary planning
-                  </p>
+                  <p class="collection-title">Easy for itinerary planning</p>
                 </div>
                 <div>
                   <button class="show-all-btn" type="button">
@@ -227,13 +231,14 @@
           </div>
           <div class="collection-containers">
             <picture class="pic">
-              <img src="assets/images/online-experiences/team-building.jpg" alt="Ideali per il team building" />
+              <img
+                src="assets/images/online-experiences/team-building.jpg"
+                alt="Ideali per il team building"
+              />
               <div class="coll">
                 <div>
                   <p class="collection">Collezione</p>
-                  <p class="collection-title">
-                    Ideali per il team building
-                  </p>
+                  <p class="collection-title">Ideali per il team building</p>
                 </div>
                 <div>
                   <button class="show-all-btn" type="button">
@@ -245,7 +250,10 @@
           </div>
           <div class="collection-containers last-element">
             <picture class="pic">
-              <img src="assets/images/online-experiences/fun-for-all-family.png" alt="Divertimento per tutta la famiglia" />
+              <img
+                src="assets/images/online-experiences/fun-for-all-family.png"
+                alt="Divertimento per tutta la famiglia"
+              />
               <div class="coll">
                 <div>
                   <p class="collection">Collezione</p>
@@ -272,8 +280,12 @@
           </div>
           <div class="spacer"></div>
           <div id="scroll-flt-container">
-            <div>
-              <button class="buttons left-button" type="button">
+            <div class="button-container-left">
+              <button
+                id="left-scroll-flts"
+                class="buttons left-button"
+                type="button"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
@@ -322,8 +334,12 @@
                 Progettate per l&apos;accessibilit&agrave;
               </button>
             </div>
-            <div>
-              <button class="buttons right-button" type="button">
+            <div class="button-container-right">
+              <button
+                id="right-scroll-flts"
+                class="buttons right-button"
+                type="button"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
@@ -349,6 +365,36 @@
             </div>
           </div>
         </div>
+        <div class="filters-width-745">
+          <div class="row-scroll-filters">
+            <button class="no-bg-filter first-btn" type="button">Date</button>
+            <button class="no-bg-filter" type="button">Dimensione del gruppo</button>
+            <button class="no-bg-filter" type="button">Pi&ugrave; filtri</button>
+            <button class="filter-btn" type="button">
+              Ideale per gruppi
+            </button>
+            <button class="filter-btn" type="button">Per le famiglie</button>
+            <button class="filter-btn" type="button">Animali</button>
+            <button class="filter-btn" type="button">Arte e scrittura</button>
+            <button class="filter-btn" type="button">Cottura al forno</button>
+            <button class="filter-btn" type="button">In cucina</button>
+            <button class="filter-btn" type="button">Danza</button>
+            <button class="filter-btn" type="button">Bevande</button>
+            <button class="filter-btn" type="button">Intrattenimento</button>
+            <button class="filter-btn" type="button">Fitness</button>
+            <button class="filter-btn" type="button">Storia e cultura</button>
+            <button class="filter-btn" type="button">Magia</button>
+            <button class="filter-btn" type="button">Musica</button>
+            <button class="filter-btn" type="button">Per il sociale</button>
+            <button class="filter-btn" type="button">Benessere</button>
+            <button class="filter-btn" type="button">
+              Atleti olimpici e paralimpici
+            </button>
+            <button class="filter-btn" type="button">
+              Progettate per l&apos;accessibilit&agrave;
+            </button>
+          </div>
+        </div>
       </div>
       <div class="travel-planning">
         <div>
@@ -358,12 +404,13 @@
                 Pianifica un viaggio con l&apos;aiuto di host da ogni parte del
                 mondo
               </h2>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28" class="arrow"></path></svg>
             </div>
             <div class="exp-buttons">
               <div>
                 <a class="show-more" href="#">Vedi tutto (6)</a>
               </div>
-              <div class="r-l-btns">  
+              <div class="r-l-btns">
                 <button class="buttons left-button" type="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -414,7 +461,430 @@
             </div>
           </div>
           <div class="listing">
-            <!-- Da inserire annunci vari -->
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/japan-1.jpeg"
+                    alt="Organizza il viaggio personalizzato perfetto in Giappone con un esperto del luogo"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  5,0 <span class="rev-number">(65)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Giappone</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>
+                  Organizza il viaggio personalizzato perfetto in Giappone con
+                  un esperto del luogo
+                </p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 41&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/japan-2.jpeg"
+                    alt="Prepara il tuo itinerario di Tokyo con una guida del luogo"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  5,0 <span class="rev-number">(18)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Giappone</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>
+                  Prepara il tuo itinerario di Tokyo con una guida del luogo
+                </p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 29&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/japan-3.jpeg"
+                    alt="Pianifica una vacanza da sogno in Giappone"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  5,0 <span class="rev-number">(8)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Giappone</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Pianifica una vacanza da sogno in Giappone</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 9&euro; </span>a persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/usa.jpeg"
+                    alt="Pianifica la vacanza perfetta a New York"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,98 <span class="rev-number">(171)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Stati Uniti</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Pianifica la vacanza perfetta a New York</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 18&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/italy-1.jpg"
+                    alt="Le perle nascoste di Roma"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,92 <span class="rev-number">(53)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Italia</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Le perle nascoste di Roma</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 11&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container last-exp">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/italy-2.jpeg"
+                    alt="Organizza un'avventura a Venezia con Giulia"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  5,0 <span class="rev-number">(20)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Italia</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Organizza un'avventura a Venezia con Giulia</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 30&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -423,6 +893,7 @@
           <div class="exp-head">
             <div class="exp-title">
               <h2>Iniziano nelle prossime 6 ore</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28" class="arrow"></path></svg>
             </div>
             <div class="exp-buttons">
               <div>
@@ -479,7 +950,234 @@
             </div>
           </div>
           <div class="listing-six-hrs">
-            <!-- Da inserire i vari annunci -->
+            <div class="six-hrs-container">
+              <div class="six-hrs-favorite">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="
+                      display: block;
+                      fill: transparent;
+                      height: 20px;
+                      width: 20px;
+                      stroke: #222;
+                      stroke-width: 2.4;
+                      overflow: visible;
+                    "
+                  >
+                    <path
+                      d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="six-hrs-pic">
+                <picture>
+                  <img
+                    src="assets/images/online-experiences/spain-3.jpeg"
+                    alt="Pausa yoga con Kat"
+                  />
+                </picture>
+              </div>
+              <div class="six-hrs-body">
+                <div class="six-hrs-elements">
+                  <div class="six-hrs-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        height: 12px;
+                        width: 12px;
+                        fill: currentcolor;
+                      "
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                      ></path>
+                    </svg>
+                    <p class="six-rating">4,97</p>
+                    <p class="six-rating-num">(67)</p>
+                    <span class="dot">&#183;</span>
+                    <div class="six-country">
+                      <p>Spagna</p>
+                    </div>
+                  </div>
+                  <div class="six-hrs-title">
+                    <p>Pausa yoga con Kat</p>
+                  </div>
+                  <div class="six-hrs-price">
+                    <p>
+                      <span class="bold-price">A partire da 28&euro; </span>a
+                      persona
+                    </p>
+                  </div>
+                </div>
+                <div class="six-hrs-time-choice">
+                  <div class="six-time">21:00</div>
+                  <div class="six-time">22:00</div>
+                  <div class="six-time six-third-time">23:00</div>
+                </div>
+              </div>
+            </div>
+            <div class="six-hrs-container">
+              <div class="six-hrs-favorite">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="
+                      display: block;
+                      fill: transparent;
+                      height: 20px;
+                      width: 20px;
+                      stroke: #222;
+                      stroke-width: 2.4;
+                      overflow: visible;
+                    "
+                  >
+                    <path
+                      d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="six-hrs-pic">
+                <picture>
+                  <img src="assets/images/online-experiences/germany.jpeg" alt="Foto creative con smartphone in casa, al lavoro e per strada">
+                </picture>
+              </div>
+              <div class="six-hrs-body">
+                <div class="six-hrs-elements">
+                  <div class="six-hrs-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        height: 12px;
+                        width: 12px;
+                        fill: currentcolor;
+                      "
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                      ></path>
+                    </svg>
+                    <p class="six-rating">4,96</p>
+                    <p class="six-rating-num">(618)</p>
+                    <span class="dot">&#183;</span>
+                    <div class="six-country">
+                      <p>Germania</p>
+                    </div>
+                  </div>
+                  <div class="six-hrs-title">
+                    <p>Foto creative con smartphone in casa, al lavoro e per strada</p>
+                  </div>
+                  <div class="six-hrs-price">
+                    <p>
+                      <span class="bold-price">A partire da 16&euro; </span>a
+                      persona
+                    </p>
+                  </div>
+                </div>
+                <div class="six-hrs-time-choice">
+                  <div class="six-time">21:00</div>
+                  <div class="six-time">22:00</div>
+                  <div class="six-time six-third-time">23:00</div>
+                </div>
+              </div>
+            </div>
+            <div class="six-hrs-container">
+              <div class="six-hrs-favorite">
+                <button type="button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="
+                      display: block;
+                      fill: transparent;
+                      height: 20px;
+                      width: 20px;
+                      stroke: #222;
+                      stroke-width: 2.4;
+                      overflow: visible;
+                    "
+                  >
+                    <path
+                      d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="six-hrs-pic">
+                <picture>
+                  <img src="assets/images/online-experiences/uk.jpg" alt="I segreti della magia">
+                </picture>
+              </div>
+              <div class="six-hrs-body">
+                <div class="six-hrs-elements">
+                  <div class="six-hrs-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        height: 12px;
+                        width: 12px;
+                        fill: currentcolor;
+                      "
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                      ></path>
+                    </svg>
+                    <p class="six-rating">4,98</p>
+                    <p class="six-rating-num">(1.560)</p>
+                    <span class="dot">&#183;</span>
+                    <div class="six-country">
+                      <p>Regno Unito</p>
+                    </div>
+                  </div>
+                  <div class="six-hrs-title">
+                    <p>I segreti della magia</p>
+                  </div>
+                  <div class="six-hrs-price">
+                    <p>
+                      <span class="bold-price">A partire da 24&euro; </span>a
+                      persona
+                    </p>
+                  </div>
+                </div>
+                <div class="six-hrs-time-choice">
+                  <div class="six-time">21:00</div>
+                  <div class="six-time">22:00</div>
+                  <div class="six-time six-third-time">00:00</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -488,6 +1186,7 @@
           <div class="exp-head">
             <div class="exp-title">
               <h2>Le pi&ugrave; prenotate</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28" class="arrow"></path></svg>
             </div>
             <div class="exp-buttons">
               <div>
@@ -543,8 +1242,430 @@
               </div>
             </div>
           </div>
-          <div class="listing-most-reserved">
-            <!-- Da inserire i vari contenuti -->
+          <div class="listing">
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/poland.jpeg"
+                    alt="Risolvi gli enigmi dell'escape room: ideale per team building"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,92 <span class="rev-number">(2.965)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Polonia</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>
+                  Risolvi gli enigmi dell&apos;escape room: ideale per team
+                  building
+                </p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 18&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/uk.jpg"
+                    alt="I segreti della magia"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,98 <span class="rev-number">(1.560)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Regno Unito</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>I segreti della magia</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 24&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/spain.jpg"
+                    alt="&#9989; 'No Spain no Game' The Fabulous Game"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,91 <span class="rev-number">(2.677)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Spagna</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>&#9989; 'No Spain no Game' The Fabulous Game</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 18&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/portugal.jpg"
+                    alt="Laboratorio di astrologia e lettura del tema natale"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,98 <span class="rev-number">(1.066)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Portogallo</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Laboratorio di astrologia e lettura del tema natale</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 18&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/south-africa.jpg"
+                    alt="Immergiti con un'esperta di squali"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,95 <span class="rev-number">(699)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Sudafrica</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Immergiti con un&apos;esperta di squali</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 16&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container last-exp">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/italy-3.jpg"
+                    alt="Pasta con le nonne"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,98 <span class="rev-number">(3.747)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Italia</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Pasta con le nonne</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 29&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -553,6 +1674,7 @@
           <div class="exp-head">
             <div class="exp-title">
               <h2>Per il weekend</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28" class="arrow"></path></svg>
             </div>
             <div class="exp-buttons">
               <div>
@@ -608,8 +1730,430 @@
               </div>
             </div>
           </div>
-          <div class="listing-weekend">
-            <!-- Da inserire i vari contenuti -->
+          <div class="listing">
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/egypt.jpeg"
+                    alt="Pianifica un viaggio in Egitto con un esperto del luogo"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  5,0 <span class="rev-number">(27)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Egitto</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>
+                  Pianifica un viaggio in Egitto con un esperto del luogo
+                </p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 2&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/italy-4.jpeg"
+                    alt="Gli gnocchi della mamma e i gesti italiani"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,98 <span class="rev-number">(64)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Italia</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>
+                  Gli gnocchi della mamma e i gesti italiani
+                </p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 18&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/ukraine.jpg"
+                    alt="Viaggio culturale in Ucraina"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,98 <span class="rev-number">(337)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Ucraina</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Viaggio culturale in Ucraina</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 10&euro; </span>a persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/spain-2.jpeg"
+                    alt="Scopri le mummie dimenticate dai libri di storia"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  5,0 <span class="rev-number">(6)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Spagna</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Scopri le mummie dimenticate dai libri di storia</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 10&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/portugal-2.jpeg"
+                    alt="Origami per qualsiasi et&agrave; e livello"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,96 <span class="rev-number">(55)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Portogallo</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Origami per qualsiasi et&agrave; e livello</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 15&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container last-exp">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/georgia.jpeg"
+                    alt="Culla di vino e cultura millenaria in Georgia"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  5,0 <span class="rev-number">(16)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Georgia</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Culla di vino e cultura millenaria in Georgia</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 14&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -618,13 +2162,14 @@
           <div class="exp-head">
             <div class="exp-title">
               <h2>Ideale per gruppi</h2>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 4; overflow: visible;"><path fill="none" d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28" class="arrow"></path></svg>
             </div>
             <div class="exp-buttons">
               <div>
                 <a class="show-more" href="#">Vedi tutto (6)</a>
               </div>
               <div class="r-l-btns">
-                <button class="buttons left-button" type="button">
+                <button onclick="" class="buttons left-button" type="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 32 32"
@@ -647,7 +2192,7 @@
                     ></path>
                   </svg>
                 </button>
-                <button class="buttons right-button" type="button">
+                <button onclick="" class="buttons right-button" type="button">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 32 32"
@@ -673,8 +2218,430 @@
               </div>
             </div>
           </div>
-          <div class="listing-groups">
-            <!-- Da inserire i vari contenuti -->
+          <div class="listing">
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/morocco.jpg"
+                    alt="Cucina il tajine marocchino passo passo con una famiglia"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,95 <span class="rev-number">(1.022)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Marocco</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>
+                  Cucina il tajine marocchino passo passo con una famiglia
+                </p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 21&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/brazil.jpeg"
+                    alt="Ricette brasiliane con la chef Mariana"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,96 <span class="rev-number">(163)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Brasile</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>
+                  Ricette brasiliane con la chef Mariana
+                </p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 16&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/india.jpeg"
+                    alt="Lezione interattiva di cucina indiana in compagnia"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,99 <span class="rev-number">(863)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>India</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Lezione interattiva di cucina indiana in compagnia</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 23&euro; </span>a persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/new-zealand.jpeg"
+                    alt="Fai la conoscenza di pecore lanose e agnelli nella mia fattoria"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,93 <span class="rev-number">(851)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Nuova Zelanda</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Fai la conoscenza di pecore lanose e agnelli nella mia fattoria</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 13&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/chile.jpeg"
+                    alt="Prepariamo insieme le empanadas cilene"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,98 <span class="rev-number">(249)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Cile</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Prepariamo insieme le empanadas cilene</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 19&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
+            <div class="single-exps-container last-exp">
+              <div class="single-exps-pic">
+                <div class="single-exps-favorite">
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: rgba(0, 0, 0, 0.5);
+                        height: 24px;
+                        width: 24px;
+                        stroke: white;
+                        stroke-width: 2;
+                        overflow: visible;
+                      "
+                    >
+                      <path
+                        d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <picture class="single-exps-image">
+                  <img
+                    src="assets/images/online-experiences/mexico.jpeg"
+                    alt="Prepara tacos messicani con una cuoca professionista"
+                  />
+                </picture>
+              </div>
+              <div class="single-exps-review">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style="
+                    display: block;
+                    height: 12px;
+                    width: 12px;
+                    fill: currentcolor;
+                  "
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                  ></path>
+                </svg>
+                <p class="rev-rating">
+                  4,98 <span class="rev-number">(4.682)</span>
+                </p>
+                <span class="dot">&#183;</span>
+                <div class="exp-country">
+                  <p>Messico</p>
+                </div>
+              </div>
+              <div class="single-exps-title">
+                <p>Prepara tacos messicani con una cuoca professionista</p>
+              </div>
+              <div class="single-exps-price">
+                <p>
+                  <span class="bold-price">A partire da 26&euro; </span>a
+                  persona
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -732,8 +2699,27 @@
         </div>
         <div class="local-info-foot">
           <a class="lang-foot" href="">
-            <button type="button" style="border: none; background: none; cursor: pointer;">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 16px; width: 16px; fill: currentcolor;"><path d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z"></path></svg>
+            <button
+              type="button"
+              style="border: none; background: none; cursor: pointer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+                role="presentation"
+                focusable="false"
+                style="
+                  display: block;
+                  height: 16px;
+                  width: 16px;
+                  fill: currentcolor;
+                "
+              >
+                <path
+                  d="M8 .25a7.77 7.77 0 0 1 7.75 7.78 7.75 7.75 0 0 1-7.52 7.72h-.25A7.75 7.75 0 0 1 .25 8.24v-.25A7.75 7.75 0 0 1 8 .25zm1.95 8.5h-3.9c.15 2.9 1.17 5.34 1.88 5.5H8c.68 0 1.72-2.37 1.93-5.23zm4.26 0h-2.76c-.09 1.96-.53 3.78-1.18 5.08A6.26 6.26 0 0 0 14.17 9zm-9.67 0H1.8a6.26 6.26 0 0 0 3.94 5.08 12.59 12.59 0 0 1-1.16-4.7l-.03-.38zm1.2-6.58-.12.05a6.26 6.26 0 0 0-3.83 5.03h2.75c.09-1.83.48-3.54 1.06-4.81zm2.25-.42c-.7 0-1.78 2.51-1.94 5.5h3.9c-.15-2.9-1.18-5.34-1.89-5.5h-.07zm2.28.43.03.05a12.95 12.95 0 0 1 1.15 5.02h2.75a6.28 6.28 0 0 0-3.93-5.07z"
+                ></path>
+              </svg>
             </button>
             Italiano (IT)
           </a>
@@ -742,17 +2728,78 @@
             <span id="curr-spell">EUR</span>
           </a>
           <a href="facebook.com/AirbnbItalia">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Visita Facebook" role="img" focusable="false" style="display: block; height: 18px; width: 18px; fill: currentcolor;"><path d="M30 0a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"></path><path fill="#fff" d="M22.94 16H18.5v-3c0-1.27.62-2.5 2.6-2.5h2.02V6.56s-1.83-.31-3.58-.31c-3.65 0-6.04 2.21-6.04 6.22V16H9.44v4.62h4.06V32h5V20.62h3.73z"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-label="Visita Facebook"
+              role="img"
+              focusable="false"
+              style="
+                display: block;
+                height: 18px;
+                width: 18px;
+                fill: currentcolor;
+              "
+            >
+              <path
+                d="M30 0a2 2 0 0 1 2 2v28a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M22.94 16H18.5v-3c0-1.27.62-2.5 2.6-2.5h2.02V6.56s-1.83-.31-3.58-.31c-3.65 0-6.04 2.21-6.04 6.22V16H9.44v4.62h4.06V32h5V20.62h3.73z"
+              ></path>
+            </svg>
           </a>
           <a href="twitter.com/airbnb_it">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Visita Twitter" role="img" focusable="false" style="display: block; height: 18px; width: 18px; fill: currentcolor;"><path d="M32 4v24a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4z"></path><path fill="#fff" d="M18.66 7.99a4.5 4.5 0 0 0-2.28 4.88A12.31 12.31 0 0 1 7.3 8.25a4.25 4.25 0 0 0 1.38 5.88c-.69 0-1.38-.13-2-.44a4.54 4.54 0 0 0 3.5 4.31 4.3 4.3 0 0 1-2 .06 4.64 4.64 0 0 0 4.19 3.13A8.33 8.33 0 0 1 5.8 23a12.44 12.44 0 0 0 19.32-11.19A7.72 7.72 0 0 0 27.3 9.5a8.3 8.3 0 0 1-2.5.75 4.7 4.7 0 0 0 2-2.5c-.87.5-1.81.87-2.81 1.06a4.5 4.5 0 0 0-5.34-.83z"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-label="Visita Twitter"
+              role="img"
+              focusable="false"
+              style="
+                display: block;
+                height: 18px;
+                width: 18px;
+                fill: currentcolor;
+              "
+            >
+              <path
+                d="M32 4v24a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M18.66 7.99a4.5 4.5 0 0 0-2.28 4.88A12.31 12.31 0 0 1 7.3 8.25a4.25 4.25 0 0 0 1.38 5.88c-.69 0-1.38-.13-2-.44a4.54 4.54 0 0 0 3.5 4.31 4.3 4.3 0 0 1-2 .06 4.64 4.64 0 0 0 4.19 3.13A8.33 8.33 0 0 1 5.8 23a12.44 12.44 0 0 0 19.32-11.19A7.72 7.72 0 0 0 27.3 9.5a8.3 8.3 0 0 1-2.5.75 4.7 4.7 0 0 0 2-2.5c-.87.5-1.81.87-2.81 1.06a4.5 4.5 0 0 0-5.34-.83z"
+              ></path>
+            </svg>
           </a>
           <a href="instagram.com/airbnb">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-label="Visita Instagram" role="img" focusable="false" style="display: block; height: 18px; width: 18px; fill: currentcolor;"><path d="M30 0H2a2 2 0 0 0-2 2v28c0 1.1.9 2 2 2h28a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path><path fill="#fff" d="M15.71 4h1.25c2.4 0 2.85.02 3.99.07 1.28.06 2.15.26 2.91.56.79.3 1.46.72 2.13 1.38.6.6 1.08 1.33 1.38 2.13l.02.06c.28.74.48 1.58.54 2.8l.01.4c.05 1.02.06 1.63.06 4.4v.92c0 2.6-.02 3.05-.07 4.23a8.78 8.78 0 0 1-.56 2.91c-.3.8-.77 1.53-1.38 2.13a5.88 5.88 0 0 1-2.13 1.38l-.06.02c-.74.28-1.59.48-2.8.53l-.4.02c-1.02.05-1.63.06-4.4.06h-.92a73.1 73.1 0 0 1-4.23-.07 8.78 8.78 0 0 1-2.91-.56c-.8-.3-1.53-.77-2.13-1.38a5.88 5.88 0 0 1-1.38-2.13l-.02-.06a8.84 8.84 0 0 1-.54-2.8l-.01-.37A84.75 84.75 0 0 1 4 16.29v-1c0-2.62.02-3.06.07-4.24.06-1.26.26-2.13.55-2.88l.01-.03c.3-.8.77-1.53 1.38-2.13a5.88 5.88 0 0 1 2.13-1.38l.06-.02a8.84 8.84 0 0 1 2.8-.54l.37-.01C12.39 4 12.99 4 15.71 4zm.91 2.16h-1.24c-2.3 0-2.91.01-3.81.05l-.42.02c-1.17.05-1.8.25-2.23.41-.56.22-.96.48-1.38.9-.4.41-.67.8-.88 1.35l-.03.06a6.7 6.7 0 0 0-.4 2.2l-.02.45c-.04.9-.05 1.53-.05 3.94v1.08c0 2.64.02 3.05.07 4.23v.07c.06 1.13.25 1.74.42 2.16.21.56.47.96.9 1.38.4.4.8.67 1.34.88l.06.03a6.7 6.7 0 0 0 2.2.4l.45.02c.9.04 1.53.05 3.94.05h1.08c2.64 0 3.05-.02 4.23-.07h.07a6.51 6.51 0 0 0 2.16-.42c.52-.19.99-.5 1.38-.9.4-.4.67-.8.88-1.34l.03-.06a6.7 6.7 0 0 0 .4-2.2l.02-.45c.04-.9.05-1.53.05-3.94v-1.09c0-2.63-.02-3.04-.07-4.22v-.07a6.51 6.51 0 0 0-.42-2.16c-.19-.52-.5-.99-.9-1.38a3.7 3.7 0 0 0-1.34-.88l-.06-.03a6.63 6.63 0 0 0-2.16-.4l-.46-.02c-.9-.04-1.5-.05-3.8-.05zM16 9.84a6.16 6.16 0 1 1 0 12.32 6.16 6.16 0 0 1 0-12.32zM16 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6.4-3.85a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z"></path></svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              aria-label="Visita Instagram"
+              role="img"
+              focusable="false"
+              style="
+                display: block;
+                height: 18px;
+                width: 18px;
+                fill: currentcolor;
+              "
+            >
+              <path
+                d="M30 0H2a2 2 0 0 0-2 2v28c0 1.1.9 2 2 2h28a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M15.71 4h1.25c2.4 0 2.85.02 3.99.07 1.28.06 2.15.26 2.91.56.79.3 1.46.72 2.13 1.38.6.6 1.08 1.33 1.38 2.13l.02.06c.28.74.48 1.58.54 2.8l.01.4c.05 1.02.06 1.63.06 4.4v.92c0 2.6-.02 3.05-.07 4.23a8.78 8.78 0 0 1-.56 2.91c-.3.8-.77 1.53-1.38 2.13a5.88 5.88 0 0 1-2.13 1.38l-.06.02c-.74.28-1.59.48-2.8.53l-.4.02c-1.02.05-1.63.06-4.4.06h-.92a73.1 73.1 0 0 1-4.23-.07 8.78 8.78 0 0 1-2.91-.56c-.8-.3-1.53-.77-2.13-1.38a5.88 5.88 0 0 1-1.38-2.13l-.02-.06a8.84 8.84 0 0 1-.54-2.8l-.01-.37A84.75 84.75 0 0 1 4 16.29v-1c0-2.62.02-3.06.07-4.24.06-1.26.26-2.13.55-2.88l.01-.03c.3-.8.77-1.53 1.38-2.13a5.88 5.88 0 0 1 2.13-1.38l.06-.02a8.84 8.84 0 0 1 2.8-.54l.37-.01C12.39 4 12.99 4 15.71 4zm.91 2.16h-1.24c-2.3 0-2.91.01-3.81.05l-.42.02c-1.17.05-1.8.25-2.23.41-.56.22-.96.48-1.38.9-.4.41-.67.8-.88 1.35l-.03.06a6.7 6.7 0 0 0-.4 2.2l-.02.45c-.04.9-.05 1.53-.05 3.94v1.08c0 2.64.02 3.05.07 4.23v.07c.06 1.13.25 1.74.42 2.16.21.56.47.96.9 1.38.4.4.8.67 1.34.88l.06.03a6.7 6.7 0 0 0 2.2.4l.45.02c.9.04 1.53.05 3.94.05h1.08c2.64 0 3.05-.02 4.23-.07h.07a6.51 6.51 0 0 0 2.16-.42c.52-.19.99-.5 1.38-.9.4-.4.67-.8.88-1.34l.03-.06a6.7 6.7 0 0 0 .4-2.2l.02-.45c.04-.9.05-1.53.05-3.94v-1.09c0-2.63-.02-3.04-.07-4.22v-.07a6.51 6.51 0 0 0-.42-2.16c-.19-.52-.5-.99-.9-1.38a3.7 3.7 0 0 0-1.34-.88l-.06-.03a6.63 6.63 0 0 0-2.16-.4l-.46-.02c-.9-.04-1.5-.05-3.8-.05zM16 9.84a6.16 6.16 0 1 1 0 12.32 6.16 6.16 0 0 1 0-12.32zM16 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm6.4-3.85a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z"
+              ></path>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
     <script src="JS/scripts.js"></script>
+    <script src="JS/buttons.js"></script>
   </body>
 </html>
