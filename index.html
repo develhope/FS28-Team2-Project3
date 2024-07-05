@@ -135,6 +135,47 @@
             </div>
           </div>
         </div>
+        <div id="mini-search-container">
+          <button type="button" id="mini-search">
+            <div>
+              <p>Ovunque</p>
+            </div>
+            <div class="mini-spacer"></div>
+            <div>
+              <p>Qualunque settimana</p>
+            </div>
+            <div class="mini-spacer"></div>
+            <div>
+              <p>Aggiungi ospiti</p>
+            </div>
+            <div id="mini-mag-cont">
+              <div id="mini-mag">
+                <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 32 32"
+                      aria-hidden="true"
+                      role="presentation"
+                      focusable="false"
+                      style="
+                        display: block;
+                        fill: none;
+                        height: 12px;
+                        width: 12px;
+                        stroke: currentcolor;
+                        stroke-width: 5.33333;
+                        overflow: visible;
+                        margin: 0;
+                      "
+                    >
+                <path
+                  fill="none"
+                  d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"
+                ></path>
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
         <div class="middle-links">
           <button type="button">
             <a id="soggiorni" href="#">Soggiorni</a>
@@ -767,6 +808,35 @@
     </header>
     <!-- Barra di navigazione per la scelta del tipo di alloggio o di attività fino alla riga 1599 -->
     <div id="stay-choices-container">
+      <div class="button-plcs-container-left">
+        <button
+          id="left-scroll-plcs"
+          class="buttons left-button"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            style="
+              display: block;
+              fill: none;
+              height: 12px;
+              width: 12px;
+              stroke: currentcolor;
+              stroke-width: 5.33333;
+              overflow: visible;
+            "
+          >
+            <path
+              fill="none"
+              d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"
+            ></path>
+          </svg>
+        </button>
+      </div>
       <div class="stay-choices-nav">
         <div class="stay-choices-elements">
           <div class="place-choice">
@@ -787,7 +857,7 @@
               Icone
             </label>
           </div>
-          <div class="place-choice">
+          <div class="place-choice" id="piscine">
             <label for="incredible-pools">
               <div>
                 <input
@@ -873,7 +943,7 @@
               Wow!
             </label>
           </div>
-          <div class="place-choice">
+          <div class="place-choice" id="baite">
             <label for="cabins">
               <div>
                 <input type="radio" id="cabins" name="destination-type" />
@@ -886,7 +956,7 @@
               Baite
             </label>
           </div>
-          <div class="place-choice">
+          <div class="place-choice" id="barche">
             <label for="boats">
               <div>
                 <input type="radio" id="boats" name="destination-type" />
@@ -995,7 +1065,7 @@
             </label>
           </div>
           <div class="place-choice">
-            <label for="tree-houses">
+            <label for="tree-houses" id="albero">
               <div>
                 <input type="radio" id="tree-houses" name="destination-type" />
                 <img
@@ -1646,9 +1716,47 @@
           </div>
         </div>
       </div>
+      <div class="button-plcs-container-right">
+        <button
+          id="right-scroll-plcs"
+          class="buttons right-button"
+          type="button"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            style="
+              display: block;
+              fill: none;
+              height: 12px;
+              width: 12px;
+              stroke: currentcolor;
+              stroke-width: 5.33333;
+              overflow: visible;
+            "
+          >
+            <path
+              fill="none"
+              d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div id="filter-btn-container">
+        <button id="filter-btn">
+          <span id="filter-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; fill: none; height: 16px; width: 16px; stroke: currentcolor; stroke-width: 3; overflow: visible;"><path fill="none" d="M7 16H3m26 0H15M29 6h-4m-8 0H3m26 20h-4M7 16a4 4 0 1 0 8 0 4 4 0 0 0-8 0zM17 6a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 20a4 4 0 1 0 8 0 4 4 0 0 0-8 0zm0 0H3"></path></svg>
+            <span>Filtri</span>
+          </span>
+        </button>
+      </div>
     </div>
+    <div id="overlay"></div>
     <div>
-      <main>
+      <main id="content">
         <!-- Da inserire i vari contenuti del main -->
         <div class="card-container" id="listing-grid"></div>
         <script src="JS/swiper-bundle.min.js"></script>
