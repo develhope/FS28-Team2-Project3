@@ -224,10 +224,8 @@
 
 html, body{
   margin: 0;
-  /* margin-top: 10px; */
   padding: 0;
   font-family: 'Circular', sans-serif;
-  /* overflow: auto; */
 }
 
 header {
@@ -279,6 +277,7 @@ header {
   transition: transform 0.5s ease, opacity 0.5s ease;
   width: 40%;
   margin-inline: 30%;
+  white-space: nowrap;
 }
 
 .links-scroll {
@@ -313,6 +312,8 @@ header {
   align-items: center;
   gap: 0.5rem;
   padding-right: 5.5%;
+  white-space: nowrap;
+  /* flex: 0; */
 }
 
 .lang-menu-btn {
@@ -641,19 +642,26 @@ p {
 }
 
 .button-plcs-container-left {
-   /* Assicurati che l'elemento principale abbia una posizione relativa */
-  display: flex;
-  height: auto;
-  align-items: center;
-  margin-left: 3%;
+   margin-left: 5.5%;
+   position: absolute;
+   left: 0;
+   background: linear-gradient(to right, #ffffff 57%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+   height: 100%;
+   display: flex;
+   align-items: center;
+   z-index: 1;
 }
 
 .button-plcs-container-right {
   right: 0;
-  /* position: absolute; */
-  height: auto;
+  position: absolute;
   background: linear-gradient(to left, #ffffff 57%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+  transform: translateX(-173px);
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
+
 
 #left-scroll-plcs {
   border-radius: 50%;
@@ -664,6 +672,18 @@ p {
   justify-content: center;
   border: 1px solid #ccc;
   background-color: white;
+}
+
+.button-plcs-container-right::before {
+  position: relative;
+  display: block;
+  height: 100%;
+  content: '';
+  width: 40px;
+  box-sizing: border-box;
+  background-image: linear-gradient(to left, #ffffff, rgb(0 0 0 / 0%));
+  background-color: transparent;
+  /* opacity: 0; */
 }
 
 .button-plcs-container-left::after {
@@ -930,7 +950,9 @@ p {
 }
 
 #stay-choices-container {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: sticky;
   z-index: 9;
   background-color: white;
@@ -938,6 +960,15 @@ p {
   justify-content: center;
   width: 100%;
   top: 5rem;
+}
+
+#stay-choices-box {
+  display: inline-flex;
+  z-index: 9;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .stay-choices-nav {
@@ -948,6 +979,7 @@ p {
   width: 100vw;
   box-sizing: border-box;
   background-color: white;
+  margin-left: 5.5%;
 }
 
 .stay-choices-elements {
@@ -1163,15 +1195,26 @@ footer {
   color: #222;
 }
 
+.reveal {
+  display: inline-flex !important;
+  gap: 0.875rem !important;
+  transform: none !important;
+  opacity: 1 !important;
+  width: 27rem !important;
+}
+
 #mini-search-container {
   display: flex;
   /* flex-direction: column; */
   /* align-items: center; */
-  justify-content: center;
-  /* z-index: 20; */
+  justify-content: space-evenly;
   position: sticky;
   top: 1rem;
   min-width: 0;
+  text-align: left;
+  z-index: 200;
+  /* margin-left: auto; */
+  /* padding-inline: 11rem; */
 }
 
 #mini-search {
@@ -1189,15 +1232,15 @@ footer {
   font-weight: 600;
   font-family: 'Circular', sans-serif;
   transition: 0.3s;
-  transform: translateY(17px);
+  transform: translateY(70px) translateX(70px);
   opacity: 0;
-  position: fixed;
-  flex: 1;
+  /* position: fixed; */
+  /* flex: 1; */
   
    /* Per far sì che il componente si espanda per riempire lo spazio disponibile */
    /* Larghezza massima del pulsante di ricerca */
   overflow: auto;
-  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 #mini-search:hover {
@@ -1205,17 +1248,21 @@ footer {
   cursor: pointer;
 }
 
-.reveal {
-  display: inline-flex !important;
-  gap: 0.875rem !important;
-  position: sticky;
-  transform: translateY(-63px) !important;
-  opacity: 1 !important;
-  width: 27rem !important;
-}
-
 #mini-search>div:nth-child(5) p {
   font-weight: 500;
+}
+
+#mini-search .mini-txt-container {
+  display: flex;
+  /* flex: 1; */
+  min-width: 0;
+}
+
+#mini-search > div > p {
+  margin: 0; /* Rimuove i margini predefiniti */
+  white-space: nowrap; /* Evita la rottura del testo su più righe */
+  overflow: hidden; /* Nasconde il testo che eccede lo spazio disponibile */
+  text-overflow: ellipsis; /* Applica l'ellipsis al testo */
 }
 
 .mini-spacer {
@@ -1233,12 +1280,14 @@ footer {
   border-radius: 30px;
   background-color: #ff385c;
   color: white;
+  flex: 0 0 auto;
 }
 
 @media (max-width: 950px) {
   #mini-search-container {
     justify-content: flex-start;
-    margin-left: 6rem;
+    padding-inline: 40px;
+    margin-right: auto;
   }
 }
 

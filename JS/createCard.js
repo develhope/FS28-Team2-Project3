@@ -87,7 +87,7 @@ async function fetchData() {
             </div>
             <div class="card-content">
                 <div class="location fs-15">${listing.location}</div>
-                <div class="host fs-15">Host:${listing.host}</div>
+                <div class="host fs-15">Host: ${listing.host}</div>
                 <div class="available fs-15">18-28 set</div>
                 <div class="price fs-15">${listing.price} €<span> notte</span></div>
                 <div class="rating fs-15"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;"><path fill-rule="evenodd" d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"></path></svg>${listing.rating}</div>

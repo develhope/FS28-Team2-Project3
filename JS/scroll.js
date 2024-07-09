@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const searchbar = document.querySelector('.search-bar');
-  const miniSearch = document.getElementById('mini-search')
+  const miniSearch = document.getElementById('mini-search');
+  const miniBtn = document.getElementById('mini-search-container');
   const links = document.querySelector('.middle-links');
   const navbar = document.querySelector('.nav-container');
   const veil = document.getElementById('overlay')
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', handleScroll);
 
-  miniSearch.addEventListener('click', () => {
+  miniBtn.addEventListener('click', () => {
     window.removeEventListener('scroll', handleScroll);
 
     links.classList.remove('links-scroll');
