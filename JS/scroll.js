@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelector('.middle-links');
   const navbar = document.querySelector('.nav-container');
   const veil = document.getElementById('overlay')
+  const mobNav = document.querySelector('.nav-mobile')
   const threshold = 0;
 
   function handleScroll() {
@@ -14,12 +15,14 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.add('scrolled');
       miniSearch.classList.add('reveal');
       veil.classList.remove('veil');
+      mobNav.classList.add('mob-nav-scroll');
 
     } else {
       links.classList.remove('links-scroll');
       searchbar.classList.remove('search-scroll');
       navbar.classList.remove('scrolled');
       miniSearch.classList.remove('reveal');
+      mobNav.classList.remove('mob-nav-scroll');
     }
   };
 
