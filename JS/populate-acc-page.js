@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const taxWithoutSym = taxes.replace(' €', '');
   const taxNum = parseFloat(taxWithoutSym);
 
-  console.log(taxNum);
-
 
   if (id) {
     try {
@@ -95,9 +93,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
       },
-      // Impostazioni aggiuntive se necessario
-      loop: true, // Facoltativo: per abilitare il loop
-  });
+    });
     
       } else {
         document.body.innerHTML = '<p>Listing not found</p>';
@@ -109,8 +105,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   } else {
     document.body.innerHTML = '<p>Invalid listing ID</p>';
   }
-});
-
-window.addEventListener('scroll', () => {
-  console.log(window.scrollY);
 });
