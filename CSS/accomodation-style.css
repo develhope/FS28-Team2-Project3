@@ -659,6 +659,97 @@ tbody {
   display: none;
 }
 
+.complete-reviews {
+  display: none;
+}
+
+.hidden-navbar {
+  display: none;
+  top: 0;
+  width: -webkit-fill-available;
+  padding: 0 40px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.hidden-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hidden-navbar.visible {
+  display: block;
+  position: fixed;
+}
+
+.flex-hidden {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.flex-hidden p {
+  font-size: 0.75rem;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.column-hidden {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-after-pictures {
+  display: flex;
+  gap: 25px;
+}
+
+.show-after-pictures button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 25px 0;
+  font-weight: 550;
+}
+
+.show-after-calendar {
+  display: none;
+  padding: 15px 0;
+}
+
+.show-after-calendar.visible {
+  display: block;
+}
+
+.column-hidden div #price-check-in {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.booking-btn button {
+  padding: 15px 45px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: radial-gradient(circle at center, #FF385C 0%, #E61E4D 27.5%, #E31C5F 40%, #D70466 57.5%, #BD1E59 75%, #BD1E59 100%);
+  border: none;
+  border-radius: 8px;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #FF385C, #BD1E59);
+  transition: background-position 0.1s;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
 @media (max-width: 1120px) {
   html, body {
     overflow: auto;
@@ -675,15 +766,3 @@ tbody {
   }
 }
 
-.complete-reviews {
-  display: none;
-}
-
-.hidden-navbar {
-  display: none;
-}
-
-.hidden-navbar.visible {
-  display: block;
-  position: fixed;
-}
