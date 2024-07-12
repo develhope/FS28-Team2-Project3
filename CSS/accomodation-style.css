@@ -840,6 +840,22 @@ tbody {
   color: #555;
 }
 
+#mobile-navbar {
+  display: none;
+}
+
+@media (max-width: 1165px) {
+  .calendars-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 950px) {
+  .complete-reviews {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 @media (max-width: 840px) {
   .insertion-pictures {
     margin-inline: 2rem;
@@ -860,11 +876,7 @@ tbody {
   }
 }
 
-@media (max-width: 950px) {
-  .complete-reviews {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
+
 
 #mini-search {
   display: inline-flex;
@@ -894,8 +906,60 @@ tbody {
     display: none;
   }
 
-  #img-mobile-wrapper {
+  .swiper-container {
     display: block;
-    z-index: 10000;
+  }
+
+  .side-container {
+    display: none;
+  }
+
+  .central-container {
+    padding-right: 2rem;
+    justify-content: center;
+    width: -webkit-fill-available;
+  }
+
+  .description-container {
+    padding: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+
+  #on-img {
+    justify-content: space-between;
+    padding-inline: 1rem;
+  }
+
+  #mobile-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    padding-inline: 1.5rem;
+  }
+
+  #left-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  #category-mobile {
+    font-weight: 600;
+  }
+  
+  #right-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .card-image {
+    border-radius: 0;
   }
 }

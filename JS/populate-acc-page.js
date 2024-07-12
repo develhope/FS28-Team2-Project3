@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   const taxWithoutSym = taxes.replace(' €', '');
   const taxNum = parseFloat(taxWithoutSym);
 
+  function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 
   if (id) {
     try {
@@ -47,6 +51,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         const correctPrice = listing.price.replace('.', '');
         const priceWithTaxes = (correctPrice * 5) + taxNum;
 
+        const catMaiusc = capitalizeFirstLetter(listing.category);
+
         document.getElementById('tab-title').innerHTML = `${listing.location}`;
         document.getElementById('place-of-insertion').innerHTML = `${listing.location}`;
         document.getElementById('insertion-title').innerHTML = `Soggiorno nelle ${listing.category}`;
@@ -65,6 +71,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('total-price-tax').innerHTML = `${priceWithTaxes} €`;
         document.getElementById('small-rating-score').innerHTML = `${listing.rating}`;
         document.getElementById('big-rating-score').innerHTML = `${listing.rating}`;
+        document.getElementById('category-mobile').innerHTML = `${catMaiusc}`;
 
         const imagesHTML = listing.images
         .map(

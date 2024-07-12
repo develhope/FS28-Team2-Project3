@@ -59,7 +59,6 @@
 }
 .swiper-horizontal {
   touch-action: pan-y;
-  touch-action: pinch-zoom;
 }
 .swiper-vertical {
   touch-action: pan-x;
