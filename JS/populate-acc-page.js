@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const maxGuests = Math.round(Math.random() * 5 + 1);
   const beds = Math.round(Math.random() * 5 + 2);
   const baths = Math.round(Math.random() * 2 + 1);
-  const taxes = document.getElementById('airbnb-service-price').innerText;
+  const taxes = document.getElementById('airbnb-service-price').innerText.replace('€');
 
   console.log('ID from URL:', id);
 
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('host-experience').innerHTML = `Superhost &#183; ${Math.round(Math.random() * 9 + 2)} anni di esperienza come host`;
         document.getElementById('price-check-in').innerHTML = `${listing.price} €`;
         document.getElementById('price').innerHTML = `${listing.price} €`;
-        document.getElementById('price-book').innerHTML = `${listing.price} €`;
+        document.getElementById('price-book').innerHTML = `${listing.price} € x 5 notti`;
         document.getElementById('total-price').innerHTML = `${listing.price * 5} €`;
         document.getElementById('total-price-tax').innerHTML = `${listing.price * 5 + parseInt(taxes, 10)} €`;
       } else {

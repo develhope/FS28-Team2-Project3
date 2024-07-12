@@ -3,12 +3,18 @@ h2 {
   font-weight: 600;
 }
 
+.upper-container {
+  padding-inline: 5rem;
+}
+
 .central-container {
   display: flex;
+  padding-inline: 5rem;
 }
 
 .side-container {
   width: 40%;
+  margin-left: 5rem;
 }
 
 .description-container {
@@ -136,10 +142,6 @@ h2 {
   background-color: #ccc;
 }
 
-.central-container {
-  margin-inline: 4%;
-}
-
 .host-info {
   display: flex;
   align-items: center;
@@ -199,11 +201,14 @@ h2 {
 }
 
 .booking-container {
+  /* position: sticky; */
+  /* top: 7rem; */
   display: flex;
   align-items: center;
   border: 1px solid #ccc;
   border-radius: 15px;
   padding: 24px;
+  box-shadow: 5px 5px 20px #ddd;
 }
 
 .insertion-price {
@@ -289,5 +294,45 @@ h2 {
 }
 
 #no-charge {
-  align-self: center;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+#calculate-price,
+#service-price-wrapper,
+#total-tax-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#calculate-price p,
+#service-price-wrapper p,
+#total-tax-wrapper p {
+  font-size: 16px;
+}
+
+#calculate-price,
+#service-price-wrapper {
+  margin-top: 16px;
+}
+
+#price-book,
+#service-price-wrapper p:first-child {
+  text-decoration: underline;
+}
+
+#total-tax-wrapper {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ccc;
+}
+
+#total-tax-wrapper p {
+  font-weight: 600;
+}
+
+#side-elements {
+  position: sticky;
+  top: 7rem;
 }
