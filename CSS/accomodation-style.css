@@ -844,6 +844,122 @@ tbody {
   display: none;
 }
 
+.host-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.host-card {
+  display: flex;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0.1, 0, 0.3);
+}
+
+.host-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 70px;
+}
+
+.host-name {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.host-info {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.host-host {
+  font-size: 0.9rem;
+}
+
+.host-svg {
+  width: 100px;
+}
+
+.host-rating {
+  margin-left: 20px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.rat-text {
+  font-size: 0.7rem;
+  padding-right: 40px;
+  font-weight: 500;
+}
+.host-reviews-num, .host-overall-rating, .host-years-exp{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.host-details {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  gap: 30px;
+}
+
+.text-host-btn {
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.text-host-btn:hover {
+  background-color: #000;
+}
+
+.prof-host {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.data-protection-warning {
+  display: flex;
+  align-items: center;
+}
+
+.data-prot {
+  font-size: 0.8rem;
+}
+
+.live-in {
+  margin-top: 25px;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  
+}
+
+.facts-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.more-infos-btn {
+  padding: 0;
+}
+
+.facts-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
 @media (max-width: 1165px) {
   .calendars-container {
     flex-direction: column;
