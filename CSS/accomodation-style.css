@@ -670,10 +670,6 @@ tbody {
   display: none;
 }
 
-.complete-reviews {
-  display: none;
-}
-
 .hidden-navbar {
   display: none;
   top: 0;
@@ -740,6 +736,10 @@ tbody {
   font-weight: 600;
 }
 
+#small-rating-score {
+  font-weight: 600;
+}
+
 .booking-btn button {
   padding: 15px 45px;
   font-size: 1rem;
@@ -761,14 +761,73 @@ tbody {
   flex: 1;
 }
 
-@media (max-width: 1120px) {
-  html, body {
-    overflow: auto;
-  }
+.complete-reviews {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 
-  .side-container {
-    transform: translateX(-3rem);
-  }
+.review-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  gap: 5px;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-picture {
+  width: 48px;
+  height: 48px;
+}
+
+.review-stars, .row-review {
+  display: flex;
+  align-items: center;
+}
+
+.row-review {
+  gap: 5px;
+}
+
+.user-name h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.review-date p {
+  font-weight: 600;
+}
+
+.review-content p {
+  font-size: 1rem;
+}
+
+.show-more-reviews-btn {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
+}
+
+.show-more-reviews-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.more-abt-reviews-btn {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #555;
 }
 
 @media (max-width: 920px) {
