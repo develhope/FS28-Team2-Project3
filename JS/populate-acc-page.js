@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('insertion-rating').textContent = `${listing.rating}`;
         document.getElementById('num').innerHTML = Math.round(Math.random() * 75 + 23);
         document.getElementById('name').innerHTML = `${listing.host}`;
+        document.getElementById('host-name').innerHTML = `${listing.host}`;
         document.getElementById('insertion-infos').innerHTML = `${listing.description}`;
         document.getElementById('host-experience').innerHTML = `Superhost &#183; ${Math.round(Math.random() * 9 + 2)} anni di esperienza come host`;
         document.getElementById('price-check-in').innerHTML = `${listing.price} €`;
@@ -67,4 +68,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   } else {
     document.body.innerHTML = '<p>Invalid listing ID</p>';
   }
+});
+
+window.addEventListener('scroll', () => {
+  console.log(window.scrollY);
 });
