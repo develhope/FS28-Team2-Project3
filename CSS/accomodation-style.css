@@ -533,3 +533,16 @@ h2 {
   font-size: 1.125rem;
   color: #555;
 }
+
+.complete-reviews {
+  display: none;
+}
+
+.hidden-navbar {
+  display: none;
+}
+
+.hidden-navbar.visible {
+  display: block;
+  position: fixed;
+}
