@@ -836,7 +836,11 @@ tbody {
   }
 }
 
-
+@media (max-width: 950px) {
+  .complete-reviews {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 #mini-search {
   display: inline-flex;
