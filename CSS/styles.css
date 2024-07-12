@@ -837,7 +837,11 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ff385c;
+  /* background: radial-gradient(circle at center,#FF385C 0%,#E61E4D 27.5%,#E31C5F 40%,#D70466 57.5%,#BD1E59 75%,#BD1E59 100%); */
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #FF385C, #BD1E59);
+  transition: background-position 0.1s;
   border: none;
   border-radius: 50px;
   padding: 10px 20px;
@@ -846,10 +850,10 @@ p {
   height: 50px;
   width: 50px;
 }
-
+/* 
 .search-button button:hover {
   background-color: #e03352;
-}
+} */
 
 .search-button svg {
   margin-right: 5px;

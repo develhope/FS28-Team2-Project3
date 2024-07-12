@@ -52,9 +52,9 @@ tbody {
 
 .side-container {
   display: flex;
-  width: 40%;
+  width: 100%;
   margin-inline: 5rem;
-  justify-content: flex-end;
+  justify-content: center;
   box-sizing: border-box;
 }
 
@@ -207,8 +207,9 @@ tbody {
 }
 
 #reviews p {
-  margin-left: .5rem;
+  margin-inline: .5rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .left-gold-laurel {
@@ -219,7 +220,7 @@ tbody {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 300px;
+  /* max-width: 300px; */
   min-width: 200px;
   flex: 1;
 }
@@ -237,7 +238,7 @@ tbody {
   justify-content: center;
   max-width: 180px;
   min-width: 100px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 #insertion-rating {
@@ -261,7 +262,7 @@ tbody {
   justify-content: center;
   max-width: 180px;
   min-width: 100px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 #num {
@@ -354,6 +355,7 @@ tbody {
   box-shadow: 5px 5px 20px #ddd;
   max-width: 350px;
   flex: 1;
+  justify-content: center;
 }
 
 .insertion-price {
@@ -373,7 +375,7 @@ tbody {
   overflow: hidden;
   font-family: Arial, sans-serif;
   max-width: 300px;
-  width: 300px;
+  width: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -493,8 +495,8 @@ tbody {
 #side-elements {
   position: sticky;
   top: 7rem;
-  max-width: min-content;
-  min-width: 0px;
+  /* max-width: 300px; */
+  min-width: 200px;
   display: flex;
   flex-direction: column;
 }
@@ -648,7 +650,16 @@ tbody {
   flex-direction: column;
   align-items:center;
   justify-content: space-between;
+}
+
+.categories-rating span {
+  font-weight: 600;
+  transform: translateY(-24px);
+}
+
+.rating-and-reviews div:not(:nth-child(2)) {
   border-left: 1px solid #ccc;
+  padding-left: 3rem;
 }
 
 .complete-reviews {
@@ -760,9 +771,37 @@ tbody {
   }
 }
 
-@media (max-width: 963px) {
+@media (max-width: 920px) {
   .side-container {
     transform: translateX(-5rem);
   }
 }
 
+
+
+#mini-search {
+  display: inline-flex;
+  z-index: 150;
+  width: 28rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  border-radius: 30px;
+  background-color: white;
+  border: none;
+  box-shadow: 1px 1px 5px #ccc;
+  font-weight: 600;
+  font-family: 'Circular', sans-serif;
+  transition: 0.3s;
+  /* position: fixed; */
+  /* flex: 1; */
+  overflow: auto;
+  white-space: nowrap;
+  transform: none;
+  opacity: 1;
+}
+
+@media (max-width: 795px) {
+
+}
