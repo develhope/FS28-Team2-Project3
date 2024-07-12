@@ -680,10 +680,164 @@ tbody {
   display: none;
 }
 
-@media (max-width: 1066px) {
-  .calendars-container {
-    flex-direction: column;
-  }
+.hidden-navbar {
+  display: none;
+  top: 0;
+  width: -webkit-fill-available;
+  padding: 0 40px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+.hidden-elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hidden-navbar.visible {
+  display: block;
+  position: fixed;
+}
+
+.flex-hidden {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.flex-hidden p {
+  font-size: 0.75rem;
+}
+
+.gap-5 {
+  gap: 5px;
+}
+
+.column-hidden {
+  display: flex;
+  flex-direction: column;
+}
+
+.show-after-pictures {
+  display: flex;
+  gap: 25px;
+}
+
+.show-after-pictures button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 25px 0;
+  font-weight: 550;
+}
+
+.show-after-calendar {
+  display: none;
+  padding: 15px 0;
+}
+
+.show-after-calendar.visible {
+  display: block;
+}
+
+.column-hidden div #price-check-in {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#small-rating-score {
+  font-weight: 600;
+}
+
+.booking-btn button {
+  padding: 15px 45px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: radial-gradient(circle at center, #FF385C 0%, #E61E4D 27.5%, #E31C5F 40%, #D70466 57.5%, #BD1E59 75%, #BD1E59 100%);
+  border: none;
+  border-radius: 8px;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #FF385C, #BD1E59);
+  transition: background-position 0.1s;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.complete-reviews {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+  margin-bottom: 40px;
+  gap: 5px;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-picture {
+  width: 48px;
+  height: 48px;
+}
+
+.review-stars, .row-review {
+  display: flex;
+  align-items: center;
+}
+
+.row-review {
+  gap: 5px;
+}
+
+.user-name h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.review-date p {
+  font-weight: 600;
+}
+
+.review-content p {
+  font-size: 1rem;
+}
+
+.show-more-reviews-btn {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
+}
+
+.show-more-reviews-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.more-abt-reviews-btn {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #555;
 }
 
 @media (max-width: 840px) {
@@ -703,6 +857,12 @@ tbody {
 @media (max-width: 747px) {
   .insertion-pictures {
     margin-right: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .complete-reviews {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

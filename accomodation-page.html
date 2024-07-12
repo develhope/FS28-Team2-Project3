@@ -176,46 +176,48 @@
         </div>
       </div>
       <div class="hidden-navbar">
-        <div>
+        <div class="hidden-elements">
           <div class="show-after-pictures">
             <button>Foto</button>
             <button>Servizi</button>
             <button>Recensioni</button>
             <button>Posizione</button>
           </div>
-        </div>
-        <div class="show-after-calendar">
-          <div>
-            <div>
-              <p><span id="price-check-in"></span> notte</p>
-            </div>
-            <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 32 32"
-                aria-hidden="true"
-                role="presentation"
-                focusable="false"
-                style="
-                  display: block;
-                  height: 10px;
-                  width: 10px;
-                  fill: currentcolor;
-                "
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
-                ></path>
-              </svg>
-              <span class="dot">&#183;</span>
-              <p>15 recensioni</p>
-            </div>
-            <div>
-              <button class="booking-btn">Prenota</button>
+          <div class="show-after-calendar">
+            <div class="flex-hidden">
+              <div class="column-hidden">
+                <div>
+                  <p><span id="price-check-in"></span> notte</p>
+                </div>
+                <div class="flex-hidden gap-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32"
+                    aria-hidden="true"
+                    role="presentation"
+                    focusable="false"
+                    style="
+                      display: block;
+                      height: 10px;
+                      width: 10px;
+                      fill: currentcolor;
+                    "
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z"
+                    ></path>
+                  </svg>
+                  <p id="small-rating-score" class="rating-score"></p>
+                  <span class="dot">&#183;</span>
+                  <p>15 recensioni</p>
+                </div>
+              </div>
+              <div class="booking-btn">
+                <button>Prenota</button>
+              </div>
             </div>
           </div>
-          <div></div>
         </div>
       </div>
     </header>
@@ -1359,7 +1361,7 @@
               />
             </div>
             <div class="rating-score">
-              <h1>5.0</h1>
+              <h1 id="big-rating-score"></h1>
             </div>
             <div class="right-laurel">
               <img
@@ -1584,7 +1586,7 @@
                   <p>2 anni su Airbnb</p>
                 </div>
               </div>
-              <div>
+              <div class="row-review">
                 <div class="review-stars">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1723,7 +1725,7 @@
                   <p>Seattle, Washington</p>
                 </div>
               </div>
-              <div>
+              <div class="row-review">
                 <div class="review-stars">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1827,7 +1829,7 @@
               </div>
               <div class="review-content">
                 <p>
-                  La villa di Ornella &grave; assolutamente splendida! Si trova
+                  La villa di Ornella &egrave; assolutamente splendida! Si trova
                   in una splendida posizione, decorata in modo impeccabile e
                   vanta anche una cantina.
                 </p>
@@ -1862,7 +1864,7 @@
                   <p>7 anni su Airbnb</p>
                 </div>
               </div>
-              <div>
+              <div class="row-review">
                 <div class="review-stars">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1959,7 +1961,7 @@
                 <div class="review-date">
                   <p>luglio 2023</p>
                 </div>
-                <span class="dot">&#183;</span>
+                <!-- <span class="dot">&#183;</span> -->
                 <div class="trip-type">
                   <p></p>
                 </div>
@@ -2002,7 +2004,7 @@
                   <p>7 anni su Airbnb</p>
                 </div>
               </div>
-              <div>
+              <div class="row-review">
                 <div class="review-stars">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -2099,7 +2101,7 @@
                 <div class="review-date">
                   <p>3 settimane fa</p>
                 </div>
-                <span class="dot">&#183;</span>
+                <!-- <span class="dot">&#183;</span> -->
                 <div class="trip-type">
                   <p></p>
                 </div>
@@ -2141,7 +2143,7 @@
                   <p>10 anni su Airbnb</p>
                 </div>
               </div>
-              <div>
+              <div class="row-review">
                 <div class="review-stars">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -2238,14 +2240,14 @@
                 <div class="review-date">
                   <p>dicembre 2023</p>
                 </div>
-                <span class="dot">&#183;</span>
+                <!-- <span class="dot">&#183;</span> -->
                 <div class="trip-type">
                   <p></p>
                 </div>
               </div>
               <div class="review-content">
                 <p>
-                  L&apos;esperienza &grave; stata molto piacevole. Abbiamo avuto
+                  L&apos;esperienza &egrave; stata molto piacevole. Abbiamo avuto
                   solo un problema con l'acqua calda che non abbiamo risolto in
                   due camere ma un&apos;esperienza che ripeterei.
                 </p>
@@ -2280,7 +2282,7 @@
                   <p>8 anni su Airbnb</p>
                 </div>
               </div>
-              <div>
+              <div class="row-review">
                 <div class="review-stars">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -2377,7 +2379,7 @@
                 <div class="review-date">
                   <p>agosto 2022</p>
                 </div>
-                <span class="dot">&#183;</span>
+                <!-- <span class="dot">&#183;</span> -->
                 <div class="trip-type">
                   <p></p>
                 </div>
@@ -4479,5 +4481,6 @@
     <script src="JS/populate-acc-page.js"></script>
     <script src="JS/swiper-bundle.min.js"></script>
     <script src="JS/prenotaBtn.js"></script>
+    <script src="JS/hidden-navbar.js"></script>
   </body>
 </html>

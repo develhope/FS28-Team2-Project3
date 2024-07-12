@@ -63,6 +63,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('price-book').innerHTML = `${listing.price} € x 5 notti`;
         document.getElementById('total-price').innerHTML = `${(listing.price) * 5} €`;
         document.getElementById('total-price-tax').innerHTML = `${priceWithTaxes} €`;
+        document.getElementById('small-rating-score').innerHTML = `${listing.rating}`;
+        document.getElementById('big-rating-score').innerHTML = `${listing.rating}`;
 
         const imagesHTML = listing.images
         .map(
