@@ -5,9 +5,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const maxGuests = Math.round(Math.random() * 5 + 1);
   const beds = Math.round(Math.random() * 5 + 2);
   const baths = Math.round(Math.random() * 2 + 1);
-  const taxes = document.getElementById('airbnb-service-price').innerText.replace('€');
+  const taxes = document.getElementById('airbnb-service-price').innerText;
+  const taxWithoutSym = taxes.replace(' €', '');
+  const taxNum = parseFloat(taxWithoutSym);
 
-  console.log('ID from URL:', id);
+  console.log(taxNum);
 
 
   if (id) {
@@ -43,6 +45,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('loved').innerHTML = `Uno degli alloggi pi&ugrave; amati dagli ospiti di Airbnb`
       }
       if (listing) {
+
+        const correctPrice = listing.price.replace('.', '');
+        const priceWithTaxes = (correctPrice * 5) + taxNum;
+
         document.getElementById('tab-title').innerHTML = `${listing.location}`;
         document.getElementById('place-of-insertion').innerHTML = `${listing.location}`;
         document.getElementById('insertion-title').innerHTML = `Soggiorno nelle ${listing.category}`;
@@ -57,8 +63,8 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('price-check-in').innerHTML = `${listing.price} €`;
         document.getElementById('price').innerHTML = `${listing.price} €`;
         document.getElementById('price-book').innerHTML = `${listing.price} € x 5 notti`;
-        document.getElementById('total-price').innerHTML = `${listing.price * 5} €`;
-        document.getElementById('total-price-tax').innerHTML = `${listing.price * 5 + parseInt(taxes, 10)} €`;
+        document.getElementById('total-price').innerHTML = `${(listing.price) * 5} €`;
+        document.getElementById('total-price-tax').innerHTML = `${priceWithTaxes} €`;
 
         const imagesHTML = listing.images
         .map(
