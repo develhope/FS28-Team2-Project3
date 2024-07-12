@@ -59,6 +59,40 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById('price-book').innerHTML = `${listing.price} € x 5 notti`;
         document.getElementById('total-price').innerHTML = `${listing.price * 5} €`;
         document.getElementById('total-price-tax').innerHTML = `${listing.price * 5 + parseInt(taxes, 10)} €`;
+
+        const imagesHTML = listing.images
+        .map(
+            (image) => `
+            <div class="swiper-slide">
+                <img src="${image.replace('../', '')}" alt="${listing.location} image">
+            </div>
+            `
+        )
+        .join('');
+    
+    const swiperWrapper = document.createElement('div');
+    swiperWrapper.innerHTML = `
+        <div class="card-image swiper-container">
+            <div class="swiper-wrapper">
+                ${imagesHTML}
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    `;
+    
+    // Aggiungi lo swiperWrapper al DOM
+    document.getElementById('img-mobile-wrapper').appendChild(swiperWrapper);
+
+    const swiper = new Swiper('.swiper-container', {
+      navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+      },
+      // Impostazioni aggiuntive se necessario
+      loop: true, // Facoltativo: per abilitare il loop
+  });
+    
       } else {
         document.body.innerHTML = '<p>Listing not found</p>';
       }

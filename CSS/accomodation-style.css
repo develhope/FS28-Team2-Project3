@@ -238,7 +238,7 @@ tbody {
   justify-content: center;
   max-width: 180px;
   min-width: 100px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 #insertion-rating {
@@ -262,7 +262,7 @@ tbody {
   justify-content: center;
   max-width: 180px;
   min-width: 100px;
-  flex: 1;
+  /* flex: 1; */
 }
 
 #num {
@@ -652,6 +652,11 @@ tbody {
   justify-content: space-between;
 }
 
+.categories-rating span {
+  font-weight: 600;
+  transform: translateY(-24px);
+}
+
 .rating-and-reviews div:not(:nth-child(2)) {
   border-left: 1px solid #ccc;
   padding-left: 3rem;
@@ -680,11 +685,11 @@ tbody {
 #mini-search {
   display: inline-flex;
   z-index: 150;
-  width: 50rem;
+  width: 28rem;
   height: 3rem;
   align-items: center;
   justify-content: flex-end;
-  gap: 5rem;
+  gap: 1rem;
   border-radius: 30px;
   background-color: white;
   border: none;
@@ -696,4 +701,10 @@ tbody {
   /* flex: 1; */
   overflow: auto;
   white-space: nowrap;
+  transform: none;
+  opacity: 1;
+}
+
+@media (max-width: 795px) {
+
 }
