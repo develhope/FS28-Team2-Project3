@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbar = document.querySelector('.nav-container');
   const veil = document.getElementById('overlay')
   const mobNav = document.querySelector('.nav-mobile')
+  const choices = document.getElementById('stay-choices-container')
   const threshold = 0;
 
   function handleScroll() {
@@ -16,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       miniSearch.classList.add('reveal');
       veil.classList.remove('veil');
       mobNav.classList.add('mob-nav-scroll');
+      choices.classList.add('b-bottom');
 
     } else {
       links.classList.remove('links-scroll');
@@ -23,6 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.remove('scrolled');
       miniSearch.classList.remove('reveal');
       mobNav.classList.remove('mob-nav-scroll');
+      choices.classList.remove('b-bottom');
     }
   };
 

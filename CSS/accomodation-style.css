@@ -1,0 +1,293 @@
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.central-container {
+  display: flex;
+}
+
+.side-container {
+  width: 40%;
+}
+
+.description-container {
+  width: 60%;
+}
+
+#img-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+}
+
+#img-container1 {
+  position: relative;
+  width: 45%;
+  margin-bottom: 12px;
+  border-radius: 10px;
+}
+
+#img-container1,
+#img-container2,
+#img-container3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#img-container1 img {
+  width: 500px;
+  height: 510px;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+
+#img-container2 img, #img-container3 img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+#img-container3 img:first-child {
+  border-radius: 0 15px 0 0;
+}
+
+#img-container3 img:nth-child(2) {
+  border-radius: 0 0 15px 0;
+}
+
+.calendar-container {
+  display: none;
+}
+
+#reviews {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  justify-content: center;
+  border-radius: 15px;
+  width: fit-content;
+  padding-block: 1rem;
+  margin-top: 2rem;
+}
+
+.loved-by-guests {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.loved-title {
+  text-align: center;
+  font-weight: 600;
+  padding: 0 4px 4px;
+}
+
+.review-stars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+}
+
+#insertion-rating {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.stars {
+  display: flex;
+  /* gap: 2px; */
+}
+
+.stars svg {
+  height: 8px !important;
+}
+
+.reviews-number {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+}
+
+#num {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#reviews-text-underlined {
+  font-weight: 600;
+  font-size: smaller;
+  text-decoration: underline;
+  transform: translateY(-3px);
+}
+
+.spacer {
+  width: 1px;
+  height: 2.5rem;
+  background-color: #ccc;
+}
+
+.central-container {
+  margin-inline: 4%;
+}
+
+.host-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+#host-pic {
+  height: 2.5rem;
+}
+
+#host-name-gen {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#host-experience {
+  font-size: 14px;
+  color: #717171
+}
+
+#more-pics-wrapper {
+  position: absolute;
+  z-index: 100;
+  bottom: 24px;
+  right: 24px;
+}
+
+.insertion-pictures {
+  display: flex;
+}
+
+.amenities-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.amenity {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.amenity p {
+  font-size: 16px;
+}
+
+.amenity-logo {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.booking-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  padding: 24px;
+}
+
+.insertion-price {
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.insertion-price > div > span:last-child {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.mini-calendar {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  width: 300px;
+}
+
+.mini-calendar-up {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.mini-check-in, .mini-check-out {
+  flex: 1;
+  padding-inline: 12px;
+  padding-block: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.mini-check-out {
+  border-left: 1px solid #ccc;
+}
+
+.mini-cal-element {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.mini-cal-date {
+  font-size: 14px;
+  color: #000;
+}
+
+.mini-calendar-down {
+  padding-inline: 12px;
+  padding-block: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.mini-cal-guests {
+  font-size: 14px;
+  color: #000;
+}
+
+.mini-cal-btn {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.mini-cal-btn button {
+  width: 100%;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  background: radial-gradient(circle at center,#FF385C 0%,#E61E4D 27.5%,#E31C5F 40%,#D70466 57.5%,#BD1E59 75%,#BD1E59 100%);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #FF385C, #BD1E59);
+  transition: background-position 0.1s;
+}
+
+#no-charge {
+  align-self: center;
+}
