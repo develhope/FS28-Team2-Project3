@@ -473,9 +473,10 @@
                     </defs>
                   </svg>
                 </div>
+                <p id="loved"></p>
               </div>
               <div class="spacer"></div>
-              <div class="review-stars">
+              <div id="review-stars">
                 <div id="reviews-description"></div>
                 <span id="insertion-rating"
                   ><!-- Punteggio dell'alloggio --></span
@@ -1051,7 +1052,7 @@
                 </div>
                 <div>
                   <div class="current-month">
-                    <h3 class="month-name-current">Luglio 2024</h3>
+                    <h3 class="month-name-current">Agosto 2024</h3>
                   </div>
                   <div class="calendar-week-days">
                     <div class="week">
@@ -1118,7 +1119,7 @@
                 </div>
                 <div>
                   <div class="next-month">
-                    <h3 class="month-name-next">Agosto 2024</h3>
+                    <h3 class="month-name-next">Settembre 2024</h3>
                   </div>
                   <div class="calendar-week-days">
                     <div class="week">
@@ -1139,17 +1140,17 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td>1</td>
-                        <td>2</td>
-                        <td>3</td>
-                        <td>4</td>
+                        <td id="start">1</td>
+                        <td class="during">2</td>
+                        <td class="during">3</td>
+                        <td class="during">4</td>
                       </tr>
                       <tr>
-                        <td>5</td>
-                        <td>6</td>
-                        <td>7</td>
-                        <td>8</td>
-                        <td>9</td>
+                        <td class="during">5</td>
+                        <td class="during">6</td>
+                        <td class="during">7</td>
+                        <td class="during">8</td>
+                        <td id="end">9</td>
                         <td>10</td>
                         <td>11</td>
                       </tr>
@@ -1402,7 +1403,7 @@
               </ol>
             </div>
           </div>
-          <div class="cleaniness">
+          <div class="categories-rating cleaniness">
             Pulizia
             <span>5.0</span>
             <div>
@@ -1425,7 +1426,7 @@
               </svg>
             </div>
           </div>
-          <div class="precision">
+          <div class="categories-rating precision">
             Precisione
             <span>5.0</span>
             <div>
@@ -1448,7 +1449,7 @@
               </svg>
             </div>
           </div>
-          <div class="check-in">
+          <div class="categories-rating check-in">
             Check-in
             <span>5.0</span>
             <div>
@@ -1471,7 +1472,7 @@
               </svg>
             </div>
           </div>
-          <div class="communication">
+          <div class="categories-rating communication">
             Comunicazione
             <span>5.0</span>
             <div>
@@ -1498,7 +1499,7 @@
               </svg>
             </div>
           </div>
-          <div class="position">
+          <div class="categories-rating position">
             Posizione
             <span>5.0</span>
             <div>
@@ -1521,7 +1522,7 @@
               </svg>
             </div>
           </div>
-          <div class="quality-price">
+          <div class="categories-rating quality-price">
             Qualit&agrave;/prezzo
             <span>5.0</span>
             <div>
@@ -2627,7 +2628,7 @@
           </svg>
           <div>
             <a href="#"
-              ><span class="place-of-insertion"
+              ><span id="place-of-insertion"
                 ><!-- Luogo dell'annuncio --></span
               ></a
             >

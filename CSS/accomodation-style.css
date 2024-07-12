@@ -3,6 +3,23 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  margin: 0;
+}
+
+table,
+th,
+td,
+tbody {
+  border: none !important;
+  border-collapse: collapse;
+}
+
+.buttons,
+.keyboard-shortcuts-btn {
+  display: none;
+}
+
 #on-img {
   display: flex;
   align-items: baseline;
@@ -38,10 +55,13 @@ h2 {
   width: 40%;
   margin-inline: 5rem;
   justify-content: flex-end;
+  box-sizing: border-box;
 }
 
 .description-container {
-  width: 60%;
+  max-width: 60%;
+  min-width: 480px;
+  padding-right: 1rem;
 }
 
 .insertion-pictures {
@@ -129,6 +149,50 @@ h2 {
   display: flex;
 }
 
+.calendars-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.calendars-container table {
+  width: 20rem;
+}
+
+.current-month h3,
+.next-month h3 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.calendar-tab th,
+.calendar-tab td {
+  padding: .8rem;
+}
+
+#start,
+#end {
+  background-color: #222;
+  color: white;
+  border-radius: 50%;
+}
+
+.during {
+  background-color: #eee;
+  border-inline: 2px solid #eee !important;
+}
+
+.calendar-footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.reset-dates-btn {
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: 600;
+  border: none;
+}
+
 #reviews {
   display: flex;
   align-items: center;
@@ -138,13 +202,26 @@ h2 {
   width: fit-content;
   padding-block: 1rem;
   margin-top: 2rem;
+  max-width: 660px;
+  min-width: 400px;
+}
+
+#reviews p {
+  margin-left: .5rem;
+  font-weight: 600;
+}
+
+.left-gold-laurel {
+  margin-left: .5rem;
 }
 
 .loved-by-guests {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  max-width: 300px;
+  min-width: 200px;
+  flex: 1;
 }
 
 .loved-title {
@@ -153,12 +230,14 @@ h2 {
   padding: 0 4px 4px;
 }
 
-.review-stars {
+#review-stars {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  max-width: 180px;
+  min-width: 100px;
+  flex: 1;
 }
 
 #insertion-rating {
@@ -180,7 +259,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  max-width: 180px;
+  min-width: 100px;
+  flex: 1;
 }
 
 #num {
@@ -271,6 +352,8 @@ h2 {
   border-radius: 15px;
   padding: 24px;
   box-shadow: 5px 5px 20px #ddd;
+  max-width: 350px;
+  flex: 1;
 }
 
 .insertion-price {
@@ -289,7 +372,11 @@ h2 {
   border-radius: 8px;
   overflow: hidden;
   font-family: Arial, sans-serif;
+  max-width: 300px;
   width: 300px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .mini-calendar-up {
@@ -335,7 +422,8 @@ h2 {
 
 .mini-cal-btn {
   text-align: center;
-  margin-top: 16px;
+  margin-top: 1rem;
+  flex: 1;
 }
 
 .mini-cal-btn button {
@@ -344,7 +432,7 @@ h2 {
 
 .mini-cal-btn button {
   width: 100%;
-  padding: 15px 30px;
+  padding: 1rem 2rem;
   border: none;
   border-radius: 8px;
   background: radial-gradient(circle at center,#FF385C 0%,#E61E4D 27.5%,#E31C5F 40%,#D70466 57.5%,#BD1E59 75%,#BD1E59 100%);
@@ -357,6 +445,10 @@ h2 {
   --mouse-y: 50%;
   background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), #FF385C, #BD1E59);
   transition: background-position 0.1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 
 #no-charge {
@@ -401,7 +493,10 @@ h2 {
 #side-elements {
   position: sticky;
   top: 7rem;
-  width: min-content;
+  max-width: min-content;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 #unique-occasion {
@@ -497,6 +592,13 @@ h2 {
     height: 1.5rem;
 }
 
+.lower-container {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  margin-inline: 5rem;
+  border-top: 1px solid #ccc;
+}
+
 #big-laurel-rating {
   display: flex;
   align-items: flex-start;
@@ -532,4 +634,43 @@ h2 {
 .loved-by-guests-big p {
   font-size: 1.125rem;
   color: #555;
+}
+
+.rating-and-reviews {
+  display: flex;
+  margin-block: 3rem;
+  justify-content: space-around;
+  height: 8rem;
+}
+
+.categories-rating {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  border-left: 1px solid #ccc;
+}
+
+.complete-reviews {
+  display: none;
+}
+
+.overall-rating {
+  display: none;
+}
+
+@media (max-width: 1120px) {
+  html, body {
+    overflow: auto;
+  }
+
+  .side-container {
+    transform: translateX(-3rem);
+  }
+}
+
+@media (max-width: 963px) {
+  .side-container {
+    transform: translateX(-5rem);
+  }
 }

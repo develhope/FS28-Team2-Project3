@@ -40,10 +40,11 @@ document.addEventListener("DOMContentLoaded", async () => {
         `;
       }
       if(listing.loved) {
-        document.getElementById('reviews-description').innerHTML = `<p>Uno degli alloggi pi&ugrave; amati dagli ospiti di Airbnb</p>`
+        document.getElementById('loved').innerHTML = `Uno degli alloggi pi&ugrave; amati dagli ospiti di Airbnb`
       }
       if (listing) {
-        document.getElementById('tab-title').innerHTML = `${listing.location}`
+        document.getElementById('tab-title').innerHTML = `${listing.location}`;
+        document.getElementById('place-of-insertion').innerHTML = `${listing.location}`;
         document.getElementById('insertion-title').innerHTML = `Soggiorno nelle ${listing.category}`;
         document.getElementById('place-and-insertion-type').innerHTML = `<h2>${listing.location}. Intero alloggio: ${listing.category}</h2>`;
         document.getElementById('guests-and-rooms').innerHTML = `${maxGuests} ospiti &#183; ${beds} camere da letto &#183; ${beds} letti &#183; ${baths} bagni`;
