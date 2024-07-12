@@ -961,5 +961,27 @@ tbody {
 
   .card-image {
     border-radius: 0;
+    margin-bottom: -12rem;
   }
+
+  html, body {
+    overflow: auto;
+  }
+
+  .hidden-navbar {
+    bottom:0;
+    top: unset;
+  }
+
+  .show-after-pictures {
+    display: none;
+  }
+
+  .show-after-calendar {
+  display: flex !important;
+  flex-direction: row-reverse;
+  width: 100%;
+  }
+
+  
 }
