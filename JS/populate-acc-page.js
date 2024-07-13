@@ -89,8 +89,6 @@ document.addEventListener("DOMContentLoaded", async () => {
             <div class="swiper-wrapper">
                 ${imagesHTML}
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
     `;
     
@@ -103,6 +101,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           prevEl: '.swiper-button-prev',
       },
     });
+
+    swiperWrapper.classList.add('img-mobile-inner-wrap')
     
       } else {
         document.body.innerHTML = '<p>Listing not found</p>';
